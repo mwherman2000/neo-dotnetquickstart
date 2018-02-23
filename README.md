@@ -9,4 +9,4 @@ The purpose of this document is to enable .NET developers who are brand new to N
 ## Languages
 
 * [English](./EN-us/README.md)
-* [Turkish](./TR-tr]/README.md)
+* [Turkish](./TR-tr/README.md)
