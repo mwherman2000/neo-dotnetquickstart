@@ -1,0 +1,5 @@
+REM cd opt/neo-python
+REM python3 prompt.py -p
+REM block 0
+docker exec -it neo-privnet-with-gas /bin/bash
+pause

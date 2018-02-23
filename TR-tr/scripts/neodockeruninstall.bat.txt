@@ -1,0 +1,8 @@
+docker container list
+docker stop neo-privnet-with-gas
+docker container list
+docker rm neo-privnet-with-gas
+docker image list
+docker rmi metachris/neo-privnet-with-gas
+docker image list
+pause
