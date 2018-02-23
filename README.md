@@ -1,4 +1,4 @@
-# NEO Blockchain Quick Start Guide for .NET Developers (dedicated project)
+# NEO Blockchain Quick Start Guide for .NET Developers
 
 NEO Blockchain Documentation for .NET Developers ([url](https://github.com/mwherman2000/neo-windocs/tree/master/windocs))
 
