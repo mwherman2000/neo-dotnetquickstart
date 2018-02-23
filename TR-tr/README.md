@@ -1,3 +1,5 @@
+## (Çeviri devam ediyor...)
+
 # NEO Blockchain Quick Start Guide for .NET Developers
 
 **TURKISH**
