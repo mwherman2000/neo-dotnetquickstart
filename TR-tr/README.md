@@ -1,39 +1,37 @@
-## (Çeviri devam ediyor...)
+# .NET Yazılımcıları için NEO Blokzinciri Hızlı Başlangıç Rehberi
 
-# NEO Blockchain Quick Start Guide for .NET Developers
+**TÜRKÇE**
 
-**TURKISH**
+.NET Yazılımcıları için NEO Blokzinciri dökümantasyonu ([url](https://github.com/mwherman2000/neo-windocs/tree/master/windocs))
 
-NEO Blockchain Documentation for .NET Developers ([url](https://github.com/mwherman2000/neo-windocs/tree/master/windocs))
+## Amaç
 
-## Purpose
+Bu döküman ile, Neo Blokzinciri teknolojisine yeni başlayan .Net yazılımcılarının NEO geliştirme ortamını mümkün olduğunca hızlı bir şekilde çalıştırabilmesini amaçlamaktadır.
 
-The purpose of this document is to enable .NET developers who are brand new to NEO Blockchain technology to create a useful NEO development environment and get it up and running in as little time as possible.
+Bu döküman spesifik olarak .NET yazılımcılarını ve mimarlarını hedeflemektedir. 
 
-This document is specifically targeted at .NET developers and architects. 
+### Uyarı
 
-### Caveat
+Ek olarak, bu dökümanın ilk yazıldığı dönemde (Şubat 2018), [*erken benimseyen*] kafa yapısında olmalısınız (https://en.wikipedia.org/wiki/Technology_adoption_life_cycle). Bunlar ilk günleri. Kullanılacak olan araçların birçoğunun kodunu indirip derleyerek çalıştırmanız gerekecektir (Visual Studio hariç). İlk başta eğlenceli olmayabilir fakat sonunda kesinlikle ödüllendirici olacaktır.
 
-In addition, when the first version of the document was written (February 2018), you will also need to have an [*early adopters*](https://en.wikipedia.org/wiki/Technology_adoption_life_cycle) mind set. It's the early days. You'll be downloading the code for most of the developer tools (aside from Visual Studio) and compiling them yourself. It may not always be fun but I promise it will certainly be rewarding in the end.
+## Hedefler
 
-## Goals
+* Mümkün olduğunca kısa sürede çalışan bir NEO geliştirme ortanının kurulması
+* C# ile ilk smart kontraktın oluşturulması, yüklenmesi ve test edilmesi.(HelloWorld örneği kullanılarak)
 
-* Ensure you have a working and properly configured NEO development environment up and running in as short a time as possible
-* Enable to create, deploy and test your first NEO smart contract written in C# (using the HelloWorld sample)
+## Prensipler
 
-## Principles
+* Güvenilir dökümantasyon sağlama: zamanında, doğru, görsel ve tam
+* Mümkün olduğunca fazla insanın zamandan tasarrufu
+* Münkün olduğunca açık kaynak yazılım kullanmak.
 
-* Provide reliable documentation: timely, accurate, visual, and complete
-* Save as much of a person's time as possible
-* Use open source software whenever possible
+## Sebepler
 
-## Drivers
+* Öz ve takip etmesi kolay dökümantasyonun eksikliği
 
-* Need in the NEO .NET developer community to have concise and easy-to-follow documentation to enable people to get up to speed developing NEO smart contracts in as short a time as possible
+## Bölümler
 
-## Sections
-
-0. [Pre-requisites and Recommendations](./00-prerequisites.md)
+0. [Gereksinimler ve Tavsiyeler](./00-prerequisites.md)
 1. [Download and install Visual Studio 2017 Community Edition integrated development environment (IDE)](./01-installvisualstudio.md)
 2. [Download and unpack NEO developer tool projects (source)](./02-downloadneodevtoolsrc.md)
 3. [Coffee time: Wait for previous activities to complete](./03-coffeetime-waitforprevactivities.md)
@@ -48,27 +46,27 @@ In addition, when the first version of the document was written (February 2018),
 12. [Appendix B - Roadmap](./12-roadmap.md)
 13. [Appendix C - Reset NEO privatenet Environment: Container, Wallets, and Clients](./13-resetprivatenetenv.md)
 
-## Statistics
+## İstatistikler
 
-* 10 major activities comprising 130 documented tasks (approximately)
-* 140 screen shots (approximately)
+* 10 temel aktivite, tahmini 130 dökümante edilmiş aktiviteyi kapsayan (yaklaşık)
+* 140 ekran görüntüsü (yaklaşık)
 
-    ![Quick Start Images Collection](./images/lighttable.png)
+    ![Hızlı başlangıç resim koleksiyonu](./images/lighttable.png)
 
-    Figure 0.1. Quick Start Image Light Table
-* 7 batch files
-* 2 JSON configuration files
-* 1 C# code snippet
+    Figure 0.1. Hızlı Başlangıç Resim Tablosu
+* 7 Toplu dosyalar
+* 2 JSONayarlar dosyası
+* 1 C# kod öreneği
 
-## References
+## Referanslar
 
-* [NEOTUTORIAL] NEO Project, [NEO smart contract tutorial](http://docs.neo.org/en-us/sc/tutorial.html) from [http://docs.neo.org/en-us/sc/tutorial.html](http://docs.neo.org/en-us/sc/tutorial.html)
+* [NEOTUTORIAL] NEO Projesi, [NEO smart contract örneği](http://docs.neo.org/en-us/sc/tutorial.html) kaynak [http://docs.neo.org/en-us/sc/tutorial.html](http://docs.neo.org/en-us/sc/tutorial.html)
 
-## Other Good Resources
+## Diğer Faydalı Kaynaklar
 
-* [NEOPYTHONTUTORIAL] Nick Fujita, [NEO Smart Contracts Tutorial: helloWorld (Python)](https://steemit.com/neo/@z0yo/neo-smart-contracts-tutorial-helloworld) from [https://steemit.com/neo/@z0yo/neo-smart-contracts-tutorial-helloworld](https://steemit.com/neo/@z0yo/neo-smart-contracts-tutorial-helloworld)
+* [NEOPYTHONTUTORIAL] Nick Fujita, [NEO Smart Contracts Tutorial: helloWorld (Python)](https://steemit.com/neo/@z0yo/neo-smart-contracts-tutorial-helloworld) kaynak [https://steemit.com/neo/@z0yo/neo-smart-contracts-tutorial-helloworld](https://steemit.com/neo/@z0yo/neo-smart-contracts-tutorial-helloworld)
 
-## Feedback
+## Geri Bildirim
 
->Awesome Mike!
+>Süpersin Mike!
 
