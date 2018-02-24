@@ -1,10 +1,11 @@
-# NEO Blockchain Quick Start Guide for .NET Developers
+# .Net Yazılımcıları içn NEO Blokzinciri Hızlı Başlangıç Rehberi
 
-NEO Blockchain Documentation for .NET Developers ([url](https://github.com/mwherman2000/neo-windocs/tree/master/windocs))
+.NET Yazılımcıları için NEO Blokzinciri dökümantasyonu ([url](https://github.com/mwherman2000/neo-windocs/tree/master/windocs))
 
-## Purpose
+## Amaç
 
-The purpose of this document is to enable .NET developers who are brand new to NEO Blockchain technology to create a useful NEO development environment and get it up and running in as little time as possible.
+Bu dökümanın amacı, Neo Blokzinciri teknolojisine yeni başlayan .Net yazılımcılarının NEO geliştirme ortamını mümkün olduğunca hızlı bir şekilde çalıştırabilmesini amaçlamaktadır.
 
-* [English](./EN-us/README.md)
-* [Turkish](./TR-tr/README.md)
+* [Türkçe](./TR-tr/README.md)
+* [İngilizce](./EN-us/README.md)
+
