@@ -87,7 +87,8 @@ Michael is also the founder of the first Canadian NEO Blockchain Meetup group (N
 * G: https://github.com/mwherman2000/neo-windocs
 * M: https://www.meetup.com/NEO-Blockchain-Toronto
 * T: https://www.twitter.com/neotoronto
-* B: http://wwwhyperonomy.com
+* B: http://www.hyperonomy.com
+* L: https://www.linkedin.com/in/mwherman/ 
 
 ## Feedback
 
