@@ -69,7 +69,7 @@ In addition, when the first version of the document was written (February 2018),
 
 ## Who is Michael Herman?
 
-Michael Herman (Toronto)
+Michael Herman (Toronto) ([photo](./images/mwherman2000.jpg))
 
 NEO City of Zion (CoZ) Developer (https://neo.org/home/team)
 
