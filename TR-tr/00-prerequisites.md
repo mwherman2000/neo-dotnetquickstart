@@ -1,53 +1,53 @@
-# NEO Blockchain Quick Start Guide for .NET Developers
+# .Net Yazılımcıları için NEO Blokzincirine Hızlı Başlangıç Rehberi
 
-NEO Blockchain Documentation for .NET Developers ([url](https://github.com/mwherman2000/neo-windocs/tree/master/windocs))
+.Net Yazılımcıları için NEO Blokzinciri dökümantasyonu ([url](https://github.com/farukterzioglu/neo-dotnetquickstart/tree/master/TR-tr)
 
-## Activity 0 - Prerequisites and Recommendations
+## Aktivite 0 - Gereksinimler ve Tavsiyeler
 
-### Purpose
+### Amaç
 
-The purpose of this activity is to for you to ensure you have Windows environment that is compatible with the list of 10 activities described in this document (and to save you a lot of time if your environment isn't compatible).  
+Bu aktivitenin amacı, dökümanlarda anlatılacak olanlara uygun Windows ortamınızın hazır olduğundan emin olmak. (Eğer gerekli geliştirme ortamınız hazır değilse size çok zaman kazandıracaktır.)
 
-### Goals, Non-Goals and Assumptions
+### Hedefler, hedef dışı konular ve varsayımlar
 
-The goal of this activity is to inform you about the minimum and recommended pre-requisites for successful execution of the remaining acitivities in Quick Start Guide for Windows .NET Developers.
+Bu aktivitenin amacı, .Net Yazılımcıları için NEO Blokzincirine Hızlı Başlangıç Rehberi'ndeki diğer aktivitelerin başarılı şekilde çalıştırılabilmesi için minimum ve tavsiye edilen gereksinimler hakkında bilgi vermek. 
 
-### Principles
+### Prensibler
 
-* Provide reliable documentation: timely, accurate, visual, and complete
-* Save as much of a person's time as possible
+* Güvenilir bir dökümantasyon sağlamak : zamanında, doğru, görsel ve eksiksiz
+* Mümkün olduğunda fazla insanın için zaman tasarrufu.
 
-### Drivers
+### Sebebler
 
-* Lack of an existing set of concise and easy to follow documentation
+* Öz ve takip etmesi kolay dökümantasyonun eksikliği.
 
-## Prerequisites and Recommendations
+## Gereksinimler ve Tavsiyeler
 
-The basic hardware and software prerquisites are that you have a computer (PC or laptap) with:
-* Microsoft Windows 10 64-bit **Pro**, Enterprise and Education edition operating system (1607 Anniversary Update, Build 14393 or later)
-  > The current version of Docker for Windows runs on 64bit Windows 10 Pro, Enterprise and Education (1607 Anniversary Update, Build 14393 or later). [[DOCKER](https://docs.docker.com/docker-for-windows/install/)]
+Temel donanım ve yazılım gereksinimleri, şu özelliklerde bir bilgisayarınızın olması (PC veya dizüstü bilgisayarınız);
+* Microsoft Windows 10 64-bit **Pro**, Enterprise ve Education sürümleri (1607 Anniversary Update, Build 14393 veya sonrası)
+  > Docker'ın mevcut sürümü 64bit Windows 10 Pro, Enterprise ve Education sürümlerinde çalışıyor. (1607 Anniversary Update, Build 14393 veya sonrası). [[DOCKER](https://docs.docker.com/docker-for-windows/install/)]
   
-  Windows 10 Home edition can't be used because it doesn't include the Hyper-V feature and hence, the Hyper-V service can't be installed/enabled and the NEO Docker container can't be use for deploying and testing NEO smart contracts. The Hyper-V service is a pre-requisite for installing Docker.
+   Hyper-V özelliği olmadığından dolayı Windows 10 Home sürümü kullanılamamaktadır, sebebi, the Hyper-V özelliği aktifleştirilemediği için Neo smart kontraktların çalıştırılacağı NEO Docker konteynırı kullanılamamaktadır. Docker konteynırlarını çalıştırabilmek için Hyper-V özelliği gerekmektedir.
   
-    ![Windows 10 Home edition doesn't include the Hyper-V feature](./images/00-prerequisites/Docker0Install-Home2.png)
+    ![Windows 10 Home sürümü Hyper-V özelliğini içermemektedir.](./images/00-prerequisites/Docker0Install-Home2.png)
 
-    Figure 0.1. Windows 10 Home edition doesn't include the Hyper-V feature
+    Figür 0.1. Windows 10 Home sürümü Hyper-V özelliğini içermemektedir
 
-  **NOTE:** If you want to use a fresh clean Windows 10 Enterprise edition (Evaluation - Build 201712) enviroment (and you are running the Hyper-V service on your physical computer), consider downloading and running the "Windows 10 Dev Environment" virtual macine image.  If is available for the following hypervisors: VMWare, Hyper-V, VirtualBox, and Parallels.  Checkout [https://developer.microsoft.com/en-us/windows/downloads/virtual-machines](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines).
+  **NOT:** Eğer temiz bir Windows 10 Enterprise (Evaluation - Build 201712) sürümü kullanmak istiyorsanız (fiziksel bilgisayarınızda Hyper-V servisini çalıştırıyorsanız), "Windows 10 Dev Environment" sanal makine imajını indirip çalıştırın. Şu hypervisor'lar tarafından desteklenmektedir: VMWare, Hyper-V, VirtualBox, and Parallels. Bakınız; [https://developer.microsoft.com/en-us/windows/downloads/virtual-machines](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines).
 
-* Latest Windows Updates installed
-* 8GB of RAM (16GM or more prefered because you need to install and enable the Hyper-V feature and service)
-* 50GB of free disk space (100GB ore preferred because you will eventually have multiple copies of the NEO blockchain files downloaded on to your machine)
-* An SSD (solid state drive) is preferred over a conventional hard drive (HDD) for perfomance reasons but it's not a necessity
+* Son Windows güncellemeleri yüklenmiş
+* 8GB of RAM (Hyper-V özellikleri yükleneceği için 16GB veya daha üstü tavsiye edilmektedir)
+* 50GB boş disk alanı (Birden fazla Neo blokzinciri dosyaları indirebileceği için 100GB veya üstü tercih edilebilir.)
+* Performans için geleneksel hard disk yerine SSD  tercih edilebilir.
 
-The activities in this document were tested with the following configurations:
-* Windows 10 Pro edition Levnovo laptop, 32GB RAM, 500GB SSD + 500GB HDD, Intel i7 processor, Virtualization Technology enabled in BIOS
-  * The installation succeeded
-* Windows 10 Enterprise edition (Evaluation - Build 201712) virtual machine (referred to above), 2GB RAM
-  * Only the Docker installation was tested and it **did not** succeed.  Not all of the required Hyper-V services were available for Docker to start without failing.
-  * The Visual Studio installation requires a key (no evaluation key is provided with the VM)
-* Windows 10 Home edition HP laptop, 8GB RAM, 1TB HDD, Intel i5 processor, Virtualization Technology enabled in BIOS
-  * The installation failed because Windows 10 Home edition doesn't include the Hyper-V feature and hence, the service can't be installed/enabled and the NEO Docker container can't be use for deploying and testing NEO smart contracts.
+Bu dökümandaki çalışmalar şu sistem özellikleri ile denenmiştir:
+* Windows 10 Pro edition Levnovo laptop, 32GB RAM, 500GB SSD + 500GB HDD, Intel i7 processor, BIOS dan Virtualization Technology aktifleştirildi
+  * Yükleme başarılı
+* Windows 10 Enterprise sürüm (Evaluation - Build 201712) sanal makinesi (yukarıda bahsedilen), 2GB RAM
+  * Sadece Docker kurulumu denendi ve başarılı **olmadı**. Docker için gerekli Hyper-V servislerinin tamamı çalıştırılamadı.
+  * Visual Studio kurulumu lisans anahtarı gerektirmektedir. (Sanal makinede deneme sürümü anahtarı bulunmamakta.)
+* Windows 10 Home sürüm, HP labtop, 8GB RAM, 1TB HDD, Intel i5 processor, BIOS dan Virtualization aktif edildi
+  *  Windows 10 Home sürümünde Hyper-V özelliği olmadığı için Neo smart kontraktlarını çalıştırılabilmesi için gerekli olan Docker konteynırı kullanılamıyor.
 
 ## Create your NEO Working Folder
 
