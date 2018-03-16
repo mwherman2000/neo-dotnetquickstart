@@ -55,7 +55,7 @@ In addition, when the first version of the document was written (February 2018),
 
 ## Statistics
 
-* 2 languages: English and Turkish [WIP]
+* 2 languages: English [Complete] and Turkish [WIP]
 * 10 major activities comprising 130 documented tasks (approximately)
 * 140 screen shots (approximately)
 
