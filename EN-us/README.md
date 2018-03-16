@@ -48,9 +48,10 @@ In addition, when the first version of the document was written (February 2018),
 8. [Create and compile HelloWorld smart contract sample](./08-createcompilesmartcontract.md)
 9. [Deploy and test the HelloWorld smart contract](./09-deploytestsmartcontract.md)
 10. [Celebrate](./10-celebrate.md)
-11. [Appendix A - Checklist](./11-checklist.md)
-12. [Appendix B - Roadmap](./12-roadmap.md)
-13. [Appendix C - Reset NEO privatenet Environment: Container, Wallets, and Clients](./13-resetprivatenetenv.md)
+11. [Quick Cycle Edit-Compile-Debugging of C#.NEO Smart Contracts](./11-edit-compile-debug.md)
+12. [Appendix A - Checklist](./12-checklist.md)
+13. [Appendix B - Roadmap](./13-roadmap.md)
+14. [Appendix C - Reset NEO privatenet Environment: Container, Wallets, and Clients](./14-resetprivatenetenv.md)
 
 ## Statistics
 
