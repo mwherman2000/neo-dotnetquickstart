@@ -1,0 +1,6 @@
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Contract\bin\Debug\NPC.mwherman2000.QuickCycle.Contract.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Contract\bin\Debug\NPC.mwherman2000.QuickCycle.Contract.pdb
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Contract\bin\Debug\Neo.SmartContract.Framework.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Contract\obj\Debug\NPC.mwherman2000.QuickCycle.Contract.csproj.CoreCompileInputs.cache
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Contract\obj\Debug\NPC.mwherman2000.QuickCycle.Contract.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Contract\obj\Debug\NPC.mwherman2000.QuickCycle.Contract.pdb

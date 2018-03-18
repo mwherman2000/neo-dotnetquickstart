@@ -12,11 +12,20 @@ To learn more about contributing to the `neo-csharpcoe`, click [here](https://gi
 
 ### Purpose
 
-The purpose of this activity is to have **fun**.
+The purpose of this activity is to demonstrate how to use Visual Studio to rapidly edit, compile and debug C#.NEO smart contracts.
 
 ### Goals, Non-Goals and Assumptions
 
-* Celebrate "getting to the end" and having a completely working NEO Blockchain .NET development environment
+* To reduce the time for your edit-compile-debug cycles to as short as possible.
+
+* Assumptions
+  * Your NEO development environment was setup by following the previpous activities 0-10 in the [NEO Blockchain Quick Start Guide for .NET Developers](https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md). This activity assumes you have an environment that conforms with the Quick Start Guide. 
+  * In particular, this activity make the following assumptions:
+    * Visual Studio 2017 Community Edition has been installed
+    * NeoContractPlugin Visual Studio Extension has been installed
+    * Neo-compiler (neon.exe) (debugger version) is installed here: `D:\repos\neo-debugger-tools\NEO-Compiler\bin\Debug`
+    * Neo-debugger is installed here: `D:\repos\neo-debugger-tools\NEO-Debugger\bin\Debug`
+    * Neo-compiler (neon.exe) (regular version) is part of your search PATH environment variable
 
 ### Principles
 
@@ -28,10 +37,206 @@ The purpose of this activity is to have **fun**.
 
 * Need in the NEO .NET developer community to have concise and easy-to-follow documentation to enable people to get up to speed developing NEO smart contracts in as short a time as possible
 
-## Celebrate
+## Quick Cycle Edit-Compile-Debugging of C#.NEO Smart Contracts
 
-1. Have **fun**
+1. TODO.
+
+    ![consoleapp10.png](./images/11-edit-compile-debug/consoleapp10.png)
+
+    TODO
+
+2. TODO.
+
+    ![consoleapp20.png](./images/11-edit-compile-debug/consoleapp20.png)
+
+    TODO
+
+3. TODO.
+
+    ![consoleapp30.png](./images/11-edit-compile-debug/consoleapp30.png)
+
+    TODO
+
+4. TODO.
+
+    ![consoleapp40.png](./images/11-edit-compile-debug/consoleapp40.png)
+
+    TODO
+
+5. TODO.
+
+    ![consoleapp50.png](./images/11-edit-compile-debug/consoleapp50.png)
+
+    TODO
+
+6. TODO.
+
+    ![consoleapp60.png](./images/11-edit-compile-debug/consoleapp60.png)
+
+    TODO
+
+7. TODO.
+
+    ![consoleapp70.png](./images/11-edit-compile-debug/consoleapp70.png)
+
+    TODO
+
+8. TODO.
+
+    ![consoleapp80.png](./images/11-edit-compile-debug/consoleapp80.png)
+
+    TODO
+
+9. TODO.
+
+    ![consoleapp90.png](./images/11-edit-compile-debug/consoleapp90.png)
+
+    TODO
+
+10. TODO.
+
+    ![consoleapp100.png](./images/11-edit-compile-debug/consoleapp100.png)
+
+    TODO
+
+11. TODO.
+
+    ![consoleapp110.png](./images/11-edit-compile-debug/consoleapp110.png)
+
+    TODO
+
+12. TODO.
+
+    ![consoleapp120.png](./images/11-edit-compile-debug/consoleapp120.png)
+
+    TODO
+
+13. TODO.
+
+    ![consoleapp130.png](./images/11-edit-compile-debug/consoleapp130.png)
+
+    TODO
+
+14. TODO.
+
+    ![consoleapp140.png](./images/11-edit-compile-debug/consoleapp140.png)
+
+    TODO
+
+15. TODO.
+
+    ![consoleapp150.png](./images/11-edit-compile-debug/consoleapp150.png)
+
+    TODO
+
+16. TODO.
+
+    ![consoleapp160.png](./images/11-edit-compile-debug/consoleapp160.png)
+
+    TODO
+
+17. TODO.
+
+    ![consoleapp170.png](./images/11-edit-compile-debug/consoleapp170.png)
+
+    TODO
+
+18. TODO.
+
+    ![consoleapp180.png](./images/11-edit-compile-debug/consoleapp180.png)
+
+    TODO
+
+19. TODO.
+
+    ![consoleapp190.png](./images/11-edit-compile-debug/consoleapp190.png)
+
+    TODO
+
+20. TODO.
+
+    ![consoleapp200.png](./images/11-edit-compile-debug/consoleapp200.png)
+
+    TODO
+
+21. TODO.
+
+    ![consoleapp210.png](./images/11-edit-compile-debug/consoleapp210.png)
+
+    TODO
+
+22. TODO.
+
+    ![consoleapp220.png](./images/11-edit-compile-debug/consoleapp220.png)
+
+    TODO
+
+23. TODO.
+
+    ![consoleapp230.png](./images/11-edit-compile-debug/consoleapp230.png)
+
+    TODO
+
+24. TODO.
+
+    ![consoleapp240.png](./images/11-edit-compile-debug/consoleapp240.png)
+
+    TODO
+
+25. TODO.
+
+    ![consoleapp250.png](./images/11-edit-compile-debug/consoleapp245.png)
+
+    TODO
+
+26. TODO.
+
+    ![consoleapp260.png](./images/11-edit-compile-debug/consoleapp250.png)
+
+    TODO
+
+27. TODO.
+
+    ![consoleapp270.png](./images/11-edit-compile-debug/consoleapp260.png)
+
+    TODO
+
+28. TODO.
+
+    ![consoleapp280.png](./images/11-edit-compile-debug/consoleapp270.png)
+
+    TODO
+
+29. TODO.
+
+    ![consoleapp290.png](./images/11-edit-compile-debug/consoleapp280.png)
+
+    TODO
+
+30. TODO.
+
+    ![consoleapp285.png](./images/11-edit-compile-debug/consoleapp285.png)
+
+    TODO
+
+31. TODO.
+
+    ![consoleapp290.png](./images/11-edit-compile-debug/consoleapp290.png)
+
+    TODO
+
+32. TODO.
+
+    ![consoleapp300.png](./images/11-edit-compile-debug/consoleapp300.png)
+
+    TODO
+
+33. TODO.
+
+    ![consoleapp310.png](./images/11-edit-compile-debug/consoleapp310.png)
+
+    TODO
 
 ## References
 
-* N/A
+* [NEOTUTORIAL] NEO Project, [NEO smart contract tutorial](http://docs.neo.org/en-us/sc/tutorial.html) from [http://docs.neo.org/en-us/sc/tutorial.html](http://docs.neo.org/en-us/sc/tutorial.html)
