@@ -20,7 +20,7 @@ The purpose of this activity is to demonstrate how to use Visual Studio to rapid
 
 * Assumptions
   * Your NEO development environment was setup by following the previous activities 0-10 in the [NEO Blockchain Quick Start Guide for .NET Developers](https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md). This activity assumes you have an environment that conforms with the Quick Start Guide. 
-  * In particular, this activity make the following assumptions:
+  * In particular, this activity is based on the following assumptions:
     * Visual Studio 2017 Community Edition has been installed
     * NeoContractPlugin Visual Studio Extension has been installed
     * Neo-compiler (neon.exe) (debugger version) is installed here:
