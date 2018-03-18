@@ -23,9 +23,15 @@ The purpose of this activity is to demonstrate how to use Visual Studio to rapid
   * In particular, this activity make the following assumptions:
     * Visual Studio 2017 Community Edition has been installed
     * NeoContractPlugin Visual Studio Extension has been installed
-    * Neo-compiler (neon.exe) (debugger version) is installed here: `D:\repos\neo-debugger-tools\NEO-Compiler\bin\Debug`
-    * Neo-debugger is installed here: `D:\repos\neo-debugger-tools\NEO-Debugger\bin\Debug`
-    * Neo-compiler (neon.exe) (regular version) is part of your search PATH environment variable
+    * Neo-compiler (neon.exe) (debugger version) is installed here:
+        ```
+        C:\repos\neo-debugger-tools\NEO-Compiler\bin\Debug
+        ```
+    * Neo-debugger is installed here: 
+        ```
+        C:\repos\neo-debugger-tools\NEO-Debugger\bin\Debug
+        ```
+    * Neo-compiler (neon.exe) (regular version) is part of your search `PATH` environment variable
 
 ### Principles
 
@@ -47,207 +53,177 @@ This is a tutorial intended for experienced .NET/C#/Visual Studio developers as 
 
 ### Creating and debugging a conventional Windows console application
 
-1. TODO
+1. Open Visual Studio. Select `File` -> `New` -> `Project...` in Visual Studio.
 
     ![consoleapp10.png](./images/11-edit-compile-debug/consoleapp10.png)
 
-    TODO
-
-2. TODO.
+2. Select `Visual C#` -> `Console App (.NET Framework)`. Enter a project name (e.g. `NPC.yourname.QuickCycle.Client` is recommended). Remove `.Client` from the solution name. Click `OK` to create the solution and initial Windows console app project.
 
     ![consoleapp20.png](./images/11-edit-compile-debug/consoleapp20.png)
 
-    TODO
+    **NOTE:** In the future, this "Client" Windows console app project becomes the placeholder for the off-chain client/server-side app that invokes the smart contract you'll create in the "Contract" smart contract project.
 
-3. TODO.
+3. Add the following statements to the `Main` method:
+
+    ```csharp
+    Console.WriteLine("Hello world!");
+    Console.ReadLine();
+    ```
+    Click `Start` to compile and debug your console application.
 
     ![consoleapp30.png](./images/11-edit-compile-debug/consoleapp30.png)
 
-    TODO
-
-4. TODO.
+4. The phrase `Hello World!` should appear in a console window. Press `Enter` or click the red `X` to close the window and return to Visual Studio.
 
     ![consoleapp40.png](./images/11-edit-compile-debug/consoleapp40.png)
 
-    TODO
-
-5. TODO.
+5. Set a breakpoint on the `Console.ReadLine();` statement by clicking in the light-blue margin on the left. Click `Start` to compile and debug your console application a second time. Wen your console app stops at the breakpoint, click `Continue` to resume. Press `Enter` or click the red `X` to close the window and return to Visual Studio.
 
     ![consoleapp50.png](./images/11-edit-compile-debug/consoleapp50.png)
 
-    TODO
-
 ### Creating a C#.NEO smart contract and setting it up for debugging
 
-6. TODO.
+6. Add a NEO smart contract project to this solution by right-clicking on the solution name in Solution Explorer in Visual Studio and select `Add` -> `New Project...`.
 
     ![consoleapp60.png](./images/11-edit-compile-debug/consoleapp60.png)
 
-    TODO
-
-7. TODO.
+7. Select `Visual C#` -> `NeoContract`. Enter a project name (e.g. `NPC.yourname.QuickCycle.Contract` is recommended). Click `OK` to create NEO smart contract project.
 
     ![consoleapp70.png](./images/11-edit-compile-debug/consoleapp70.png)
 
-    TODO
-
-8. TODO.
+8. Right-click on the `NPC.yourname.QuickCycle.Contract` project in Solution Explorer and select `Set as Startup Project` to make the smart contract project the default project in the solution.
 
     ![consoleapp80.png](./images/11-edit-compile-debug/consoleapp80.png)
 
-    TODO
-
-9. TODO.
+9. Click the `Build project` or `Build solution` icon on the Visual Studio toolbar. (Alternatively, you can right-click on the project in Solution Explorer and select `Build` or `Rebuild`).
 
     ![consoleapp90.png](./images/11-edit-compile-debug/consoleapp90.png)
 
-    TODO
-
-10. TODO.
+10. Note in the Output panel in the lower-left corner Visual Studio that your smart contract was built and the NEO VM byte code (.AVM) file was created by the default (non-debugger) version of the NEO compiler (`neon.exe`).
 
     ![consoleapp100.png](./images/11-edit-compile-debug/consoleapp100.png)
 
-    TODO
-
-11. TODO.
+11. To update the project settings to use the debugger version of the NEO compiler and to configure the NEO debugger to be launched when you click `Start`, right-click on the `NPC.yourname.QuickCycle.Contract`project in Solution Explorer and select `Properties`.
 
     ![consoleapp110.png](./images/11-edit-compile-debug/consoleapp110.png)
 
-    TODO
+12. Two sets of project properties need to be updateC: `Build Events` and `Debug`. 
 
-12. TODO.
+      Click on the `Build Events` tab. In the `Post-build event commmand line` text box, pre-append the path where the debugger-version of the NEO Compiler executable (`neon.exe`) can be found to `%PATH%` and then invoke the compiler passing it the value of the Visual Studio `$(TargetPath)` environment variable:
 
-    ![consoleapp120.png](./images/11-edit-compile-debug/consoleapp120.png)
-
-    TODO
-
-13. TODO.
-
+      ```
+      set PATH="C:\repos\neo-debugger-tools\NEO-Compiler\bin\Debug";%PATH%
+      neon.exe $(TargetPath)
+      ```
     ![consoleapp130.png](./images/11-edit-compile-debug/consoleapp130.png)
 
-    TODO
+13. Click on the `Debug` tab. Click the `Start external program` radio button. In the `Start external program` text box, enter the full path name for the NEO debugger executable (`neod.exe`):
 
-14. TODO.
-
-    ![consoleapp140.png](./images/11-edit-compile-debug/consoleapp140.png)
-
-    TODO
-
-15. TODO.
+      ```
+      C:\repos\neo-debugger-tools\NEO-Debugger\bin\Debug\neod.exe
+      ```
 
     ![consoleapp150.png](./images/11-edit-compile-debug/consoleapp150.png)
 
-    TODO
-
-16. TODO.
+14. In the `Command line arguments` text box, enter the name of the name of your smart contract project concatenated with `.avm` (e.g. `NPC.yourname.QuickCycle.Contract.avm`). This the default name that is used by the NEO Compiler during the build process.
 
     ![consoleapp160.png](./images/11-edit-compile-debug/consoleapp160.png)
 
-    TODO
-
-17. TODO.
+15. Click the `X` on the project's properties tab to close it.
 
     ![consoleapp170.png](./images/11-edit-compile-debug/consoleapp170.png)
 
-    TODO
-
-18. TODO.
+16. Right-click on the smart contract project in Solution Explorer and select `Rebuild`.
 
     ![consoleapp180.png](./images/11-edit-compile-debug/consoleapp180.png)
 
-    TODO
-
-19. TODO.
+17. Note that in the `Output` panel, two compilations have been performed as part of the build process: i) the debugger-version of the NEO Compiler ran first followed by ii) the non-debugger version of the NEO Compiler as "post-post-build" step. We need to remove the invocation of the non-debugger version of the NEO compiler.
 
     ![consoleapp190.png](./images/11-edit-compile-debug/consoleapp190.png)
 
-    TODO
-
-20. TODO.
+18. Right-click on the project in Solution Explorer and select `Open Folder` in File Explorer`.
 
     ![consoleapp200.png](./images/11-edit-compile-debug/consoleapp200.png)
 
-    TODO
-
-21. TODO.
+19. We need to edit the `NPC.yourname.QuickCycle.Contract.csproj` C# project file to remove the post-post-build step. Right-click on the C# project file and open it with a text editor other the Visual Studio (e.g. Notepad or Visual Studio Code).
 
     ![consoleapp210.png](./images/11-edit-compile-debug/consoleapp210.png)
 
-    TODO
+20. Scroll down to the bottom of the C# project file. Select the following lines and click `Delete` or `Backspace` to remove these lines from the C# project file.
 
-22. TODO.
+    ```xml
+    <Target Name="AfterBuild">
+        <Message Text="Start NeoContract converter, Source File: $(TargetPath)" Importance="high">
+        </Message>
+        <ConvertTask DataSource="$(TargetPath)" />
+    </Target>
+    ```
 
     ![consoleapp220.png](./images/11-edit-compile-debug/consoleapp220.png)
 
-    TODO
+21. Save the file and close the text editor. 
 
-23. TODO.
+    **NOTE:** If you used Visual Studio Code to edit the C# project file, double-check that you have saved the file before closing Visual Studio Code. Visual Studio Code will save the edited but unsaved file for you.  It doesn't prompt to check if you want to save the file before closing.
 
     ![consoleapp230.png](./images/11-edit-compile-debug/consoleapp230.png)
 
-    TODO
-
-24. TODO.
+22. When you return to Visual Studio, the following pop-up dialog box will appear.  Click `Reload` to reload the C# project file.  This will have no effect on your solution other than to remove the post-post-build event.
 
     ![consoleapp240.png](./images/11-edit-compile-debug/consoleapp240.png)
 
-    TODO
-
-25. TODO.
+23. Right-click on the smart contract project in Solution Explorer and select `Rebuild`.
 
     ![consoleapp250.png](./images/11-edit-compile-debug/consoleapp245.png)
 
-    TODO
-
-26. TODO.
+24. Note in the `Output` panel that the post-post-build event has been removed and only the debugger version of the NEO Compiler was executed.
 
     ![consoleapp260.png](./images/11-edit-compile-debug/consoleapp250.png)
 
-    TODO
-
 ### Debugging your C#.NEO smart contract
 
-27. TODO.
+25. TODO.
 
     ![consoleapp270.png](./images/11-edit-compile-debug/consoleapp260.png)
 
     TODO
 
-28. TODO.
+26. TODO.
 
     ![consoleapp280.png](./images/11-edit-compile-debug/consoleapp270.png)
 
     TODO
 
-29. TODO.
+27. TODO.
 
     ![consoleapp290.png](./images/11-edit-compile-debug/consoleapp280.png)
 
     TODO
 
-30. TODO.
+28. TODO.
 
     ![consoleapp285.png](./images/11-edit-compile-debug/consoleapp285.png)
 
     TODO
 
-31. TODO.
+29. TODO.
 
     ![consoleapp290.png](./images/11-edit-compile-debug/consoleapp290.png)
 
     TODO
 
-32. TODO.
+30. TODO.
 
     ![consoleapp300.png](./images/11-edit-compile-debug/consoleapp300.png)
 
     TODO
 
-33. TODO.
+31. TODO.
 
     ![consoleapp310.png](./images/11-edit-compile-debug/consoleapp310.png)
 
     TODO
+
+32. TODO
 
 ## References
 
