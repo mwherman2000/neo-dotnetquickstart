@@ -37,9 +37,17 @@ The purpose of this activity is to demonstrate how to use Visual Studio to rapid
 
 * Need in the NEO .NET developer community to have concise and easy-to-follow documentation to enable people to get up to speed developing NEO smart contracts in as short a time as possible
 
-## Quick Cycle Edit-Compile-Debugging of C#.NEO Smart Contracts
+## Quick Cycle Edit-Compile-Debugging of C#.NEO Smart Contracts: Video Tutorial
 
-1. TODO.
+This is a tutorial intended for experienced .NET/C#/Visual Studio developers as well as those that are new to the platform. 12:28 minutes
+
+[![Activity 11. Quick Cycle Edit-Compile-Debugging of C#.NEO Smart Contracts](https://img.youtube.com/vi/cXBzuuve36Q/0.jpg)](https://www.youtube.com/watch?v=cXBzuuve36Q) 
+
+## Quick Cycle Edit-Compile-Debugging of C#.NEO Smart Contracts: Task-by-Task Tutorial
+
+### Creating and debugging a conventional Windows console application
+
+1. TODO
 
     ![consoleapp10.png](./images/11-edit-compile-debug/consoleapp10.png)
 
@@ -68,6 +76,8 @@ The purpose of this activity is to demonstrate how to use Visual Studio to rapid
     ![consoleapp50.png](./images/11-edit-compile-debug/consoleapp50.png)
 
     TODO
+
+### Creating a C#.NEO smart contract and setting it up for debugging
 
 6. TODO.
 
@@ -194,6 +204,8 @@ The purpose of this activity is to demonstrate how to use Visual Studio to rapid
     ![consoleapp260.png](./images/11-edit-compile-debug/consoleapp250.png)
 
     TODO
+
+### Debugging your C#.NEO smart contract
 
 27. TODO.
 
