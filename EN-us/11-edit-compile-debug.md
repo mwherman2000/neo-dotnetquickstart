@@ -19,7 +19,7 @@ The purpose of this activity is to demonstrate how to use Visual Studio to rapid
 * To reduce the time for your edit-compile-debug cycles to as short as possible.
 
 * Assumptions
-  * Your NEO development environment was setup by following the previpous activities 0-10 in the [NEO Blockchain Quick Start Guide for .NET Developers](https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md). This activity assumes you have an environment that conforms with the Quick Start Guide. 
+  * Your NEO development environment was setup by following the previous activities 0-10 in the [NEO Blockchain Quick Start Guide for .NET Developers](https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md). This activity assumes you have an environment that conforms with the Quick Start Guide. 
   * In particular, this activity make the following assumptions:
     * Visual Studio 2017 Community Edition has been installed
     * NeoContractPlugin Visual Studio Extension has been installed
@@ -109,7 +109,7 @@ This is a tutorial intended for experienced .NET/C#/Visual Studio developers as 
 
 12. Two sets of project properties need to be updateC: `Build Events` and `Debug`. 
 
-      Click on the `Build Events` tab. In the `Post-build event commmand line` text box, pre-append the path where the debugger-version of the NEO Compiler executable (`neon.exe`) can be found to `%PATH%` and then invoke the compiler passing it the value of the Visual Studio `$(TargetPath)` environment variable:
+      Click on the `Build Events` tab. In the `Post-build event command line` text box, pre-append the path where the debugger-version of the NEO Compiler executable (`neon.exe`) can be found to `%PATH%` and then invoke the compiler passing it the value of the Visual Studio `$(TargetPath)` environment variable:
 
       ```
       set PATH="C:\repos\neo-debugger-tools\NEO-Compiler\bin\Debug";%PATH%
@@ -181,49 +181,45 @@ This is a tutorial intended for experienced .NET/C#/Visual Studio developers as 
 
 ### Debugging your C#.NEO smart contract
 
-25. TODO.
+25. To finally debug your smart contract, click `Start`.
 
     ![consoleapp270.png](./images/11-edit-compile-debug/consoleapp260.png)
 
-    TODO
-
-26. TODO.
+26. The NEO Debugger will be launched. The source code for your smart contract should be visible in the main panel.
 
     ![consoleapp280.png](./images/11-edit-compile-debug/consoleapp270.png)
 
-    TODO
+27. You can either press `F5` to begin execution of your smart contract (without single stepping enabled) or press `F10` to single-step through your contract.
 
-27. TODO.
+    For this task, press `F10` to single step through your smart contract.
+
+    The following `Invoke Smart Contract` pop-up dialog will appear. Because the `Main` method for this smart contract doesn't accept any parameters and doesn't return any values, simple click `Debug` to start your debugging session.
 
     ![consoleapp290.png](./images/11-edit-compile-debug/consoleapp280.png)
 
-    TODO
-
-28. TODO.
+28. Press `F10` to single-step through your smart contract.
 
     ![consoleapp285.png](./images/11-edit-compile-debug/consoleapp285.png)
 
-    TODO
-
-29. TODO.
+29. Continue to press `F10` to single-step through your smart contract until it completes and the `Execution finished` pop-up appears. 
 
     ![consoleapp290.png](./images/11-edit-compile-debug/consoleapp290.png)
 
-    TODO
+    **NOTE:** This invocation of your smart contract consumed just of 1 GAS. Most of this was due to the `Storage.Put()` system call.
 
-30. TODO.
+30. To inspect the contents of the NEO Storage emulator implemented by the NEO Debugger, select `Debug` -> `Storage` on the debugger tool bar.
 
     ![consoleapp300.png](./images/11-edit-compile-debug/consoleapp300.png)
 
-    TODO
+31. The following Storage pop-up dialog will appear.
 
-31. TODO.
+    **NOTE:** The single key-value pair that appears in the Storage pop-up dialog.
 
     ![consoleapp310.png](./images/11-edit-compile-debug/consoleapp310.png)
 
-    TODO
+32. Click the `X` in the top-right corner of the debugger to close it and return to Visual Studio where you can continue to edit your smart contract project.
 
-32. TODO
+33. To resume the edit-compile-debug cycle by simply clicking `Start` in Visual Studio.
 
 ## References
 
