@@ -34,4 +34,4 @@ The purpose of this activity is to have **fun**.
 
 ## References
 
-* N/A
+* [QUICKSTART] neo-csharpcoe, [NEO Blockchain Quick Start Guide for .NET Developers](https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md) from [https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md](https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md)

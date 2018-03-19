@@ -77,7 +77,7 @@ This is a tutorial intended for experienced .NET/C#/Visual Studio developers as 
 
     ![consoleapp40.png](./images/11-edit-compile-debug/consoleapp40.png)
 
-5. Set a breakpoint on the `Console.ReadLine();` statement by clicking in the light-blue margin on the left. Click `Start` to compile and debug your console application a second time. Wen your console app stops at the breakpoint, click `Continue` to resume. Press `Enter` or click the red `X` to close the window and return to Visual Studio.
+5. Set a breakpoint on the `Console.ReadLine();` statement by clicking in the light-blue margin on the left. Click `Start` to compile and debug your console application a second time. When your console app stops at the breakpoint, click `Continue` to resume. Press `Enter` or click the red `X` to close the window and return to Visual Studio.
 
     ![consoleapp50.png](./images/11-edit-compile-debug/consoleapp50.png)
 
@@ -87,7 +87,7 @@ This is a tutorial intended for experienced .NET/C#/Visual Studio developers as 
 
     ![consoleapp60.png](./images/11-edit-compile-debug/consoleapp60.png)
 
-7. Select `Visual C#` -> `NeoContract`. Enter a project name (e.g. `NPC.yourname.QuickCycle.Contract` is recommended). Click `OK` to create NEO smart contract project.
+7. Select `Visual C#` -> `NeoContract`. Enter a project name (e.g. `NPC.yourname.QuickCycle.Contract` is recommended). Click `OK` to create your NEO smart contract project.
 
     ![consoleapp70.png](./images/11-edit-compile-debug/consoleapp70.png)
 
@@ -107,17 +107,16 @@ This is a tutorial intended for experienced .NET/C#/Visual Studio developers as 
 
     ![consoleapp110.png](./images/11-edit-compile-debug/consoleapp110.png)
 
-12. Two sets of project properties need to be updateC: `Build Events` and `Debug`. 
+12. Two sets of project properties need to be updated: `Build Events` and `Debug`. 
 
-      Click on the `Build Events` tab. In the `Post-build event command line` text box, pre-append the path where the debugger-version of the NEO Compiler executable (`neon.exe`) can be found to `%PATH%` and then invoke the compiler passing it the value of the Visual Studio `$(TargetPath)` environment variable:
-
+      Click on the `Build Events` tab. In the `Post-build event command line` text box, pre-append the path where the debugger version of the NEO Compiler executable (`neon.exe`) can be found to the `%PATH%` environment variable and then invoke the compiler passing it the value of the Visual Studio `$(TargetPath)` environment variable. Copy and paste the following commands into the `Post-build event command line` text box.
       ```
       set PATH="C:\repos\neo-debugger-tools\NEO-Compiler\bin\Debug";%PATH%
       neon.exe $(TargetPath)
       ```
     ![consoleapp130.png](./images/11-edit-compile-debug/consoleapp130.png)
 
-13. Click on the `Debug` tab. Click the `Start external program` radio button. In the `Start external program` text box, enter the full path name for the NEO debugger executable (`neod.exe`):
+13. Click on the `Debug` tab. Click the `Start external program` radio button. In the `Start external program` text box, enter the full path name for the NEO debugger executable (`neod.exe`). Copy and paste the following commands ino the `Start external program` text box.
 
       ```
       C:\repos\neo-debugger-tools\NEO-Debugger\bin\Debug\neod.exe
@@ -125,7 +124,7 @@ This is a tutorial intended for experienced .NET/C#/Visual Studio developers as 
 
     ![consoleapp150.png](./images/11-edit-compile-debug/consoleapp150.png)
 
-14. In the `Command line arguments` text box, enter the name of the name of your smart contract project concatenated with `.avm` (e.g. `NPC.yourname.QuickCycle.Contract.avm`). This the default name that is used by the NEO Compiler during the build process.
+14. In the `Command line arguments` text box, enter the name of your smart contract project concatenated with `.avm` (e.g. `NPC.yourname.QuickCycle.Contract.avm`). This the default name that is used by the NEO Compiler during the build process.
 
     ![consoleapp160.png](./images/11-edit-compile-debug/consoleapp160.png)
 
@@ -141,15 +140,15 @@ This is a tutorial intended for experienced .NET/C#/Visual Studio developers as 
 
     ![consoleapp190.png](./images/11-edit-compile-debug/consoleapp190.png)
 
-18. Right-click on the project in Solution Explorer and select `Open Folder` in File Explorer`.
+18. Right-click on the project in Solution Explorer and select `Open Folder in File Explorer`.
 
     ![consoleapp200.png](./images/11-edit-compile-debug/consoleapp200.png)
 
-19. We need to edit the `NPC.yourname.QuickCycle.Contract.csproj` C# project file to remove the post-post-build step. Right-click on the C# project file and open it with a text editor other the Visual Studio (e.g. Notepad or Visual Studio Code).
+19. We need to edit the `NPC.yourname.QuickCycle.Contract.csproj` C# project file to remove the post-post-build step. Right-click on the C# project file and open it with a text editor other than Visual Studio (e.g. Notepad or Visual Studio Code).
 
     ![consoleapp210.png](./images/11-edit-compile-debug/consoleapp210.png)
 
-20. Scroll down to the bottom of the C# project file. Select the following lines and click `Delete` or `Backspace` to remove these lines from the C# project file.
+20. Scroll down to the bottom of the C# project file. Select the following lines and press `Delete` or `Backspace` to remove these lines from the C# project file.
 
     ```xml
     <Target Name="AfterBuild">
@@ -205,7 +204,7 @@ This is a tutorial intended for experienced .NET/C#/Visual Studio developers as 
 
     ![consoleapp290.png](./images/11-edit-compile-debug/consoleapp290.png)
 
-    **NOTE:** This invocation of your smart contract consumed just of 1 GAS. Most of this was due to the `Storage.Put()` system call.
+    **NOTE:** This invocation of your smart contract consumed just over 1 GAS. Most of this was attributable to the single `Storage.Put()` system call in the smart contract.
 
 30. To inspect the contents of the NEO Storage emulator implemented by the NEO Debugger, select `Debug` -> `Storage` on the debugger tool bar.
 
@@ -213,7 +212,7 @@ This is a tutorial intended for experienced .NET/C#/Visual Studio developers as 
 
 31. The following Storage pop-up dialog will appear.
 
-    **NOTE:** The single key-value pair that appears in the Storage pop-up dialog.
+    **NOTE:** The single key-value pair that appears in the Storage pop-up dialog is from the execution of the single `Storage.Put()` system call in the smart contract.
 
     ![consoleapp310.png](./images/11-edit-compile-debug/consoleapp310.png)
 
@@ -223,4 +222,4 @@ This is a tutorial intended for experienced .NET/C#/Visual Studio developers as 
 
 ## References
 
-* [NEOTUTORIAL] NEO Project, [NEO smart contract tutorial](http://docs.neo.org/en-us/sc/tutorial.html) from [http://docs.neo.org/en-us/sc/tutorial.html](http://docs.neo.org/en-us/sc/tutorial.html)
+* [QUICKSTART] neo-csharpcoe, [NEO Blockchain Quick Start Guide for .NET Developers](https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md) from [https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md](https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md)

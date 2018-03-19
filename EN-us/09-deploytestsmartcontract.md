@@ -430,7 +430,7 @@ The tasks for this activity are complete. Proceed to [Activity 10 - Celebrate](.
 
 ## References
 
-* [NEOTUTORIAL] NEO Project, [NEO smart contract tutorial](http://docs.neo.org/en-us/sc/tutorial.html) from [http://docs.neo.org/en-us/sc/tutorial.html](http://docs.neo.org/en-us/sc/tutorial.html)
+* [QUICKSTART] neo-csharpcoe, [NEO Blockchain Quick Start Guide for .NET Developers](https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md) from [https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md](https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md)
 * [NEODOCKER1] metachris, [metachris/neo-privnet-with-gas](https://hub.docker.com/r/metachris/neo-privnet-with-gas/) from [https://hub.docker.com/r/metachris/neo-privnet-with-gas/]https://hub.docker.com/r/metachris/neo-privnet-with-gas/()
 * [NEOPARMTYPES] Neo Project, [Smart Contract Parameters and Return Values](http://docs.neo.org/en-us/sc/tutorial/Parameter.html) from [http://docs.neo.org/en-us/sc/tutorial/Parameter.html](http://docs.neo.org/en-us/sc/tutorial/Parameter.html)
 

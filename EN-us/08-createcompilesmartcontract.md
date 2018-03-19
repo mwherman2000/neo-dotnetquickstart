@@ -81,5 +81,6 @@ The tasks for this activity are complete. Proceed to [Activity 9 - Deploy and te
 
 ## References
 
-* [NEOTUTORIAL] NEO Project, [NEO smart contract tutorial](http://docs.neo.org/en-us/sc/tutorial.html) from [http://docs.neo.org/en-us/sc/tutorial.html](http://docs.neo.org/en-us/sc/tutorial.html)
+* [QUICKSTART] neo-csharpcoe, [NEO Blockchain Quick Start Guide for .NET Developers](https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md) from [https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md](https://github.com/mwherman2000/neo-dotnetquickstart/blob/master/README.md)
+
 
