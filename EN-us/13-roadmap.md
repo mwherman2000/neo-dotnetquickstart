@@ -12,7 +12,7 @@ To learn more about contributing to the `neo-csharpcoe`, click [here](https://gi
 
 ### Purpose
 
-The purpose of this activity is track this document's section-by-section status as well as notes for fre
+The purpose of this activity is track this document's section-by-section status.
 
 ### Goals, Non-Goals and Assumptions
 
