@@ -1,0 +1,6 @@
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.Meetup1\NPC.mwherman2000.Meetup1.Contract\bin\Release\NPC.mwherman2000.Meetup1.Contract.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.Meetup1\NPC.mwherman2000.Meetup1.Contract\bin\Release\Neo.SmartContract.Framework.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.Meetup1\NPC.mwherman2000.Meetup1.Contract\obj\Release\NPC.mwherman2000.Meetup1.Contract.csprojResolveAssemblyReference.cache
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.Meetup1\NPC.mwherman2000.Meetup1.Contract\obj\Release\NPC.mwherman2000.Meetup1.Contract.csproj.CoreCompileInputs.cache
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.Meetup1\NPC.mwherman2000.Meetup1.Contract\obj\Release\NPC.mwherman2000.Meetup1.Contract.csproj.CopyComplete
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.Meetup1\NPC.mwherman2000.Meetup1.Contract\obj\Release\NPC.mwherman2000.Meetup1.Contract.dll

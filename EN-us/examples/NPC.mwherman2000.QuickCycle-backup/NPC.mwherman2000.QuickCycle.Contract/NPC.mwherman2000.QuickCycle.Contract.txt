@@ -1,5 +1,0 @@
-set PATH="D:\repos\neo-debugger-tools\NEO-Compiler\bin\Debug";%PATH%
-neon.exe $(TargetPath)
-
-D:\repos\neo-debugger-tools\NEO-Debugger\bin\Debug\neod.exe
-StorageGas16x32.avm

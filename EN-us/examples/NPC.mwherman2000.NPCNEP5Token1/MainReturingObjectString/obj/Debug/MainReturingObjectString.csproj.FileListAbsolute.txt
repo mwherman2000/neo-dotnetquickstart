@@ -1,0 +1,8 @@
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\MainReturingObjectString\bin\Debug\MainReturingObjectString.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\MainReturingObjectString\bin\Debug\MainReturingObjectString.pdb
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\MainReturingObjectString\bin\Debug\Neo.SmartContract.Framework.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\MainReturingObjectString\obj\Debug\MainReturingObjectString.csprojResolveAssemblyReference.cache
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\MainReturingObjectString\obj\Debug\MainReturingObjectString.csproj.CoreCompileInputs.cache
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\MainReturingObjectString\obj\Debug\MainReturingObjectString.csproj.CopyComplete
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\MainReturingObjectString\obj\Debug\MainReturingObjectString.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\MainReturingObjectString\obj\Debug\MainReturingObjectString.pdb

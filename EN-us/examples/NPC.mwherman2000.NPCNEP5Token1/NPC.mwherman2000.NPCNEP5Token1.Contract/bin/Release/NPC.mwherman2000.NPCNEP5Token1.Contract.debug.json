@@ -1,0 +1,18 @@
+{
+    "avm":
+    {
+        "name":"NPC.mwherman2000.NPCNEP5Token1.Contract",
+        "hash":"E525825E0383DC033D1051CBC9432332"
+    },
+    "compiler":
+    {
+        "name":"neon.exe",
+        "version":"1.0.0.0"
+    },
+    "files":
+    [
+    ],
+    "map":
+    [
+    ]
+}

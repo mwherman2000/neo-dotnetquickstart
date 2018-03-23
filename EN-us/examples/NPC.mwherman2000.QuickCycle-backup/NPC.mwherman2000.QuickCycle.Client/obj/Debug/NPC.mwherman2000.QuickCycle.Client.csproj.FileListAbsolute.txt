@@ -1,7 +1,0 @@
-D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Client\bin\Debug\NPC.mwherman2000.QuickCycle.Client.exe.config
-D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Client\bin\Debug\NPC.mwherman2000.QuickCycle.Client.exe
-D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Client\bin\Debug\NPC.mwherman2000.QuickCycle.Client.pdb
-D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Client\obj\Debug\NPC.mwherman2000.QuickCycle.Client.csprojResolveAssemblyReference.cache
-D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Client\obj\Debug\NPC.mwherman2000.QuickCycle.Client.csproj.CoreCompileInputs.cache
-D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Client\obj\Debug\NPC.mwherman2000.QuickCycle.Client.exe
-D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.QuickCycle\NPC.mwherman2000.QuickCycle.Client\obj\Debug\NPC.mwherman2000.QuickCycle.Client.pdb

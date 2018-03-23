@@ -1,0 +1,5 @@
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.Meetup1\NPC.mwherman2000.Meetup1.Model\bin\Debug\NPC.mwherman2000.Meetup1.Model.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.Meetup1\NPC.mwherman2000.Meetup1.Model\bin\Debug\NPC.mwherman2000.Meetup1.Model.pdb
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.Meetup1\NPC.mwherman2000.Meetup1.Model\obj\Debug\NPC.mwherman2000.Meetup1.Model.csproj.CoreCompileInputs.cache
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.Meetup1\NPC.mwherman2000.Meetup1.Model\obj\Debug\NPC.mwherman2000.Meetup1.Model.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.Meetup1\NPC.mwherman2000.Meetup1.Model\obj\Debug\NPC.mwherman2000.Meetup1.Model.pdb

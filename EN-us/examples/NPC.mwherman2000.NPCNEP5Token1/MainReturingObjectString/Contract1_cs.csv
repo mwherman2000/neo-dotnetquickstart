@@ -1,0 +1,18 @@
+
+"Tally by Opcode"
+
+"","","Opcode (Hex) >","0x00","0x04","0x51","0x52","0x53","0x54","0x61","0x62","0x66","0x6B","0x6C","0x75","0x76","0x7A","0xC1","0xC3","0xC4","0xC5"
+"","","Opcode >","PUSH0","4","PUSH1","PUSH2","PUSH3","PUSH4","NOP","JMP","RET","TOALTSTACK","FROMALTSTACK","DROP","DUP","ROLL","PACK","PICKITEM","SETITEM","NEWARRAY"
+"","","Cost >","0","0","0","0","0","0","0","0.001","0.001","0.001","0.001","0.001","0.001","0.001","0.001","0.001","0.001","0.001"
+"D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\MainReturingObjectString\Contract1.cs","0","// No source code available","5","2","4","11","2","1","5","3","2","13","13","2","11","7","1","4","7","2"
+"","","Tally by Opcode>","5","2","4","11","2","1","5","3","2","13","13","2","11","7","1","4","7","2"
+"","","Total Tally>","95"
+
+"Costs by Opcode"
+
+"","","Opcode (Hex) >","0x00","0x04","0x51","0x52","0x53","0x54","0x61","0x62","0x66","0x6B","0x6C","0x75","0x76","0x7A","0xC1","0xC3","0xC4","0xC5"
+"","","Opcode >","PUSH0","4","PUSH1","PUSH2","PUSH3","PUSH4","NOP","JMP","RET","TOALTSTACK","FROMALTSTACK","DROP","DUP","ROLL","PACK","PICKITEM","SETITEM","NEWARRAY"
+"","","Cost >","0","0","0","0","0","0","0","0.001","0.001","0.001","0.001","0.001","0.001","0.001","0.001","0.001","0.001","0.001"
+"D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\MainReturingObjectString\Contract1.cs","0","// No source code available","0","0","0","0","0","0","0","0.003","0.002","0.013","0.013","0.002","0.011","0.007","0","0.004","0.007","0.002"
+"","","Costs by Opcode>","0","0","0","0","0","0","0","0.003","0.002","0.013","0.013","0.002","0.011","0.007","0","0.004","0.007","0.002"
+"","","Total Cost>","0.064"

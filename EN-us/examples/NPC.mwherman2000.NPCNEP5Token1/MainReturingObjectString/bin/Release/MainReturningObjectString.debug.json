@@ -1,0 +1,18 @@
+{
+    "avm":
+    {
+        "name":"MainReturningObjectString",
+        "hash":"93705D272A8D8F5B943D293DC600541D"
+    },
+    "compiler":
+    {
+        "name":"neon.exe",
+        "version":"1.0.0.0"
+    },
+    "files":
+    [
+    ],
+    "map":
+    [
+    ]
+}

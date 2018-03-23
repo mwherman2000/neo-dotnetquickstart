@@ -1,0 +1,17 @@
+{
+    "hash":"0xd4284385651ab88eae1e86ad2d8ab55ea927558f",
+    "entrypoint":"Main",
+    "functions":
+    [
+        {
+            "name":"Main",
+            "parameters":
+            [
+            ],
+            "returntype":"Unknown:NPC.mwherman2000.Meetup2.Contract.MeetupAttendee"
+        }
+    ],
+    "events":
+    [
+    ]
+}

@@ -1,0 +1,7 @@
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\NPC.mwherman2000.NPCNEP5Token1.Contract\bin\Release\mscorlib.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\NPC.mwherman2000.NPCNEP5Token1.Contract\bin\Release\NPC.mwherman2000.NPCNEP5Token1.Contract.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\NPC.mwherman2000.NPCNEP5Token1.Contract\bin\Release\Neo.SmartContract.Framework.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\NPC.mwherman2000.NPCNEP5Token1.Contract\obj\Release\NPC.mwherman2000.NPCNEP5Token1.Contract.csproj.CoreCompileInputs.cache
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\NPC.mwherman2000.NPCNEP5Token1.Contract\obj\Release\NPC.mwherman2000.NPCNEP5Token1.Contract.csproj.CopyComplete
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\NPC.mwherman2000.NPCNEP5Token1.Contract\obj\Release\NPC.mwherman2000.NPCNEP5Token1.Contract.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\NPC.mwherman2000.NPCNEP5Token1.Contract\obj\Release\NPC.mwherman2000.NPCNEP5Token1.Contract.csprojResolveAssemblyReference.cache

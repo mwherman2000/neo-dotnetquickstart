@@ -1,0 +1,5 @@
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\NPC.mwherman2000.NPCNEP5Token1.Model\bin\Release\NPC.mwherman2000.NPCNEP5Token1.Model.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\NPC.mwherman2000.NPCNEP5Token1.Model\bin\Release\NPC.mwherman2000.NPCNEP5Token1.Model.pdb
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\NPC.mwherman2000.NPCNEP5Token1.Model\obj\Release\NPC.mwherman2000.NPCNEP5Token1.Model.csproj.CoreCompileInputs.cache
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\NPC.mwherman2000.NPCNEP5Token1.Model\obj\Release\NPC.mwherman2000.NPCNEP5Token1.Model.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NPCNEP5Token1\NPC.mwherman2000.NPCNEP5Token1.Model\obj\Release\NPC.mwherman2000.NPCNEP5Token1.Model.pdb

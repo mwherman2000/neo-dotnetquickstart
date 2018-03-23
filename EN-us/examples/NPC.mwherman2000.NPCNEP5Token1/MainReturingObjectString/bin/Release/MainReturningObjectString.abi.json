@@ -1,0 +1,32 @@
+{
+    "hash":"0xf9b4ffa8da9502ee8db1831b2771f1dafd56af6c",
+    "entrypoint":"Main",
+    "functions":
+    [
+        {
+            "name":"Main",
+            "parameters":
+            [
+                {
+                    "name":"operation",
+                    "type":"String"
+                },
+                {
+                    "name":"args",
+                    "type":"Array"
+                }
+            ],
+            "returntype":"Any"
+        },
+        {
+            "name":"ping",
+            "parameters":
+            [
+            ],
+            "returntype":"String"
+        }
+    ],
+    "events":
+    [
+    ]
+}

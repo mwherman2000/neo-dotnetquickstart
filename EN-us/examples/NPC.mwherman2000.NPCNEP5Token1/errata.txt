@@ -1,0 +1,35 @@
+NEP5: In C#.NEO, you can't have a method and an event with the same name (e.g. `transfer`) as required in the specification #33
+ Open	mwherman2000 opened this issue a minute ago · 0 comments Comments
+Assignees
+No one assigned
+Labels
+None yet
+Milestone
+No milestone
+Notifications
+You’re receiving notifications because you authored the thread.
+1 participant
+@mwherman2000
+ @mwherman2000
+ 
+mwherman2000 commented a minute ago
+The NEP5 spec (https://github.com/neo-project/proposals/blob/master/nep-5.mediawiki) states that there are to be a Required method and a Required event both called transfer. This isn't allowed in C#.NEO.
+
+Is this an error/bug in the specification? Is there a specification that is more current/up-to-date?
+
+NEP5: Do the required methods have to be declared `public` per the current specification? #32
+ Open	mwherman2000 opened this issue 6 minutes ago · 0 comments Comments
+Assignees
+No one assigned
+Labels
+None yet
+Milestone
+No milestone
+Notifications
+You’re receiving notifications because you authored the thread.
+1 participant
+@mwherman2000
+ @mwherman2000
+ 
+mwherman2000 commented 6 minutes ago
+The NEP5 spec (https://github.com/neo-project/proposals/blob/master/nep-5.mediawiki) states that there is a Required and Optional set of methods that need to be implemented and that they need to be declared public. Is this spec up-to-date? For example, the referenced example https://github.com/lllwvlvwlll/Woolong/blob/master/Woolong/Woolong.cs, declares these methods as private. Is there a specification that is more current/up-to-date?
