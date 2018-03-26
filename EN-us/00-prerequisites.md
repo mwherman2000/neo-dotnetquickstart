@@ -142,6 +142,7 @@ The .NET 4.7 Dev Pack is required to be able to build some components in the NEO
     Figure 0.12. Microsoft Downloads site: Microsoft .NET Framework 4.7 Developer Pack and Language Packs for Windows 7 SP1, Windows 8.1, Windows 10 Anniversary Update, Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2 and Windows Server 2016
 
 12. Go to your Downloads folder on your computer and double-click the `NDP47-DevPack-KB3186612-ENU.exe` executable.
+
 13. Click OK to run as Adminstrator for the installation process.
 
     ![.NET 4.7 Dev Pack EULA](./images/00-prerequisites/Dotnet4-7DevPack3Install.png)
@@ -159,6 +160,12 @@ The .NET 4.7 Dev Pack is required to be able to build some components in the NEO
     ![.NET 4.7 Dev Pack Installation Complete](./images/00-prerequisites/Dotnet4-7DevPack5Install.png)
 
     Figure 0.15. .NET 4.7 Dev Pack Installation Complete
+
+## Updates
+
+1. March 2018: New versions of the NEO developer tools suite require the .NET 4.7.1 Dev Pack to be installed.  The .NET 4.7.1 Dev Pack can be downloaded from [here](https://www.microsoft.com/en-us/download/details.aspx?id=56119) ([https://www.microsoft.com/en-us/download/details.aspx?id=56119](https://www.microsoft.com/en-us/download/details.aspx?id=56119)). Follow the same instructions above for installing this version of the Dev Pack.
+
+   * [Microsoft .NET Framework 4.7.1 Developer Pack and Language Packs for Windows 7 SP1, Windows 8.1, Windows 10 Anniversary Update, Windows 10 Creators Update, Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2 and Windows Server 2016](https://www.microsoft.com/en-us/download/details.aspx?id=56119)
 
 The tasks for this activity are complete. Proceed to [Activity 1 - Download and install Visual Studio 2017 Community Edition integrated development environment (IDE)](./01-installvisualstudio.md).
 
