@@ -133,6 +133,42 @@ namespace NPC.mwherman2000.NeoExpenses1.EncryptionTest
             sw.Close();
 
             // Reference: https://msdn.microsoft.com/en-us/library/system.io.compression.gzipstream%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396
+            using (FileStream originalFileStream = new FileStream(KeysFolder + PublicKeyFile, FileMode.Open))
+            {
+                using (FileStream compressedFileStream = File.Create(KeysFolder + PublicKeyFile + ".gz"))
+                {
+                    using (GZipStream compressedStream = new GZipStream(compressedFileStream, CompressionMode.Compress))
+                    {
+                        originalFileStream.CopyTo(compressedStream);
+                    }
+                }
+                FileInfo compressedFileStreamInfo = new FileInfo(KeysFolder + PublicKeyFile + ".gz");
+                long savings = originalFileStream.Length - compressedFileStreamInfo.Length;
+                MessageBox.Show(String.Format("Compressed {0} from {1} to {2} bytes = {3} bytes = {4}%",
+                                                KeysFolder + PublicKeyFile,
+                                                originalFileStream.Length.ToString(),
+                                                compressedFileStreamInfo.Length.ToString(),
+                                                -savings,
+                                                (-100 * savings / originalFileStream.Length).ToString())
+                                );
+            }
+            using (FileStream compressedFileStream = new FileStream(KeysFolder + PublicKeyFile + ".gz", FileMode.Open))
+            {
+                using (FileStream decompressedFileStream = File.Create(KeysFolder + PublicKeyFile.Replace(".xml", "2.xml")))
+                {
+                    using (GZipStream steamToBeDecompressed = new GZipStream(compressedFileStream, CompressionMode.Decompress))
+                    {
+                        steamToBeDecompressed.CopyTo(decompressedFileStream);
+                    }
+                }
+                FileInfo compressedFileStreamInfo = new FileInfo(KeysFolder + PublicKeyFile + ".gz"); // Seems to close early
+                FileInfo decompressedFileStreamInfo = new FileInfo(KeysFolder + PublicKeyFile.Replace(".xml", "2.xml"));
+                MessageBox.Show(String.Format("Decompressed {0} from {1} to {2} bytes",
+                                                KeysFolder + PublicKeyFile + ".gz",
+                                                compressedFileStreamInfo.Length.ToString(),
+                                                decompressedFileStreamInfo.Length.ToString()));
+            }
+
             using (FileStream originalFileStream = new FileStream(KeysFolder + PublicPrivateKeyFile, FileMode.Open))
             {
                 using (FileStream compressedFileStream = File.Create(KeysFolder + PublicPrivateKeyFile + ".gz"))
