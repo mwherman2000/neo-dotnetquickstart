@@ -28,7 +28,7 @@ namespace NPC.mwherman2000.Meetup1.Contract
             MeetupAttendee.Log("e1", e1);
             MeetupAttendee.Put(e1, "phzmjpyxgbpb" + "/" + "2169884");
 
-            MeetupAttendee e2 = MeetupAttendee.Get("phzmjpyxgbpb" + "/" + "2169884x");
+            MeetupAttendee e2 = MeetupAttendee.Get("phzmjpyxgbpb" + "/" + "2169884");
             MeetupAttendee.Log("e2", e2);
             if (MeetupAttendee.IsMissing(e2))
             {

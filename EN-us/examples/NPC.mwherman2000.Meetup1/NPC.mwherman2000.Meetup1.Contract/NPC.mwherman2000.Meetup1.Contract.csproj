@@ -60,6 +60,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="NPC.mwherman2000.Meetup1.Contract.xlsx" />
     <None Include="packages.config" />
     <None Include="build.tasks" />
   </ItemGroup>
