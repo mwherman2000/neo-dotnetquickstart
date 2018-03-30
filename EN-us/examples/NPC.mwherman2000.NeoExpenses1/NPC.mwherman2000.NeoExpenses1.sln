@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPC.mwherman2000.NeoExpenses1.EncryptionTest", "NPC.mwherman2000.NeoExpenses1.EncryptionTest\NPC.mwherman2000.NeoExpenses1.EncryptionTest.csproj", "{5EBBCA17-B689-4E91-BB06-4B0C210A9AF1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPC.mwherman2000.NeoExpenses1.Model", "NPC.mwherman2000.NeoExpenses1.Model\NPC.mwherman2000.NeoExpenses1.Model.csproj", "{0AA89C36-8FE7-4E68-9712-C3A6A37A6DFC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPC.mwherman2000.NeoExpenses1.Contract", "NPC.mwherman2000.NeoExpenses1.Contract\NPC.mwherman2000.NeoExpenses1.Contract.csproj", "{765DAFB3-2EF6-4C18-AC9B-2F674FBC3958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPC.mwherman2000.NeoExpenses1.Client", "NPC.mwherman2000.NeoExpenses1.Client\NPC.mwherman2000.NeoExpenses1.Client.csproj", "{5EBBCA17-B689-4E91-BB06-4B0C210A9AF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPC.mwherman2000.NeoExpenses1.TestEncryption", "NPC.mwherman2000.NeoExpenses1.TestEncryption\NPC.mwherman2000.NeoExpenses1.TestEncryption.csproj", "{B6A80C9B-6201-41C7-9BAA-E049B9502792}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5EBBCA17-B689-4E91-BB06-4B0C210A9AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5EBBCA17-B689-4E91-BB06-4B0C210A9AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5EBBCA17-B689-4E91-BB06-4B0C210A9AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5EBBCA17-B689-4E91-BB06-4B0C210A9AF1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0AA89C36-8FE7-4E68-9712-C3A6A37A6DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0AA89C36-8FE7-4E68-9712-C3A6A37A6DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AA89C36-8FE7-4E68-9712-C3A6A37A6DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +25,14 @@ Global
 		{765DAFB3-2EF6-4C18-AC9B-2F674FBC3958}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{765DAFB3-2EF6-4C18-AC9B-2F674FBC3958}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{765DAFB3-2EF6-4C18-AC9B-2F674FBC3958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EBBCA17-B689-4E91-BB06-4B0C210A9AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EBBCA17-B689-4E91-BB06-4B0C210A9AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EBBCA17-B689-4E91-BB06-4B0C210A9AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EBBCA17-B689-4E91-BB06-4B0C210A9AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6A80C9B-6201-41C7-9BAA-E049B9502792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A80C9B-6201-41C7-9BAA-E049B9502792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A80C9B-6201-41C7-9BAA-E049B9502792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A80C9B-6201-41C7-9BAA-E049B9502792}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

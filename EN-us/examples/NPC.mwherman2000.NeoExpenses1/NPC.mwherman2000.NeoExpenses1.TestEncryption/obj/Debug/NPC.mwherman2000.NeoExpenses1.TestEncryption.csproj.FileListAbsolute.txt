@@ -1,0 +1,10 @@
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.TestEncryption\bin\Debug\NPC.mwherman2000.NeoExpenses1.TestEncryption.exe.config
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.TestEncryption\bin\Debug\NPC.mwherman2000.NeoExpenses1.TestEncryption.exe
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.TestEncryption\bin\Debug\NPC.mwherman2000.NeoExpenses1.TestEncryption.pdb
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.TestEncryption\obj\Debug\NPC.mwherman2000.NeoExpenses1.TestEncryption.csprojResolveAssemblyReference.cache
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.TestEncryption\obj\Debug\NPC.mwherman2000.NeoExpenses1.TestEncryption.Form1.resources
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.TestEncryption\obj\Debug\NPC.mwherman2000.NeoExpenses1.TestEncryption.Properties.Resources.resources
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.TestEncryption\obj\Debug\NPC.mwherman2000.NeoExpenses1.TestEncryption.csproj.GenerateResource.cache
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.TestEncryption\obj\Debug\NPC.mwherman2000.NeoExpenses1.TestEncryption.csproj.CoreCompileInputs.cache
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.TestEncryption\obj\Debug\NPC.mwherman2000.NeoExpenses1.TestEncryption.exe
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.TestEncryption\obj\Debug\NPC.mwherman2000.NeoExpenses1.TestEncryption.pdb
