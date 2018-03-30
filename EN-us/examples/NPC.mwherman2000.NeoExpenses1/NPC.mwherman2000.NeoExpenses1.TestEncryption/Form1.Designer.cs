@@ -38,8 +38,8 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBoxExportPrivateKey = new System.Windows.Forms.CheckBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +56,7 @@
             // 
             // buttonDecryptFile
             // 
-            this.buttonDecryptFile.Location = new System.Drawing.Point(211, 21);
+            this.buttonDecryptFile.Location = new System.Drawing.Point(30, 111);
             this.buttonDecryptFile.Name = "buttonDecryptFile";
             this.buttonDecryptFile.Size = new System.Drawing.Size(146, 42);
             this.buttonDecryptFile.TabIndex = 1;
@@ -135,17 +135,7 @@
             this.groupBox1.Size = new System.Drawing.Size(566, 177);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Key Management";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.buttonDecryptFile);
-            this.groupBox2.Location = new System.Drawing.Point(12, 205);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(566, 80);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Decrypt with Current Key";
+            this.groupBox1.Text = "Current Key Management";
             // 
             // checkBoxExportPrivateKey
             // 
@@ -159,11 +149,21 @@
             this.checkBoxExportPrivateKey.Text = "Export Private Key";
             this.checkBoxExportPrivateKey.UseVisualStyleBackColor = true;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.buttonDecryptFile);
+            this.groupBox2.Location = new System.Drawing.Point(598, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(198, 177);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Decrypt with Current Key";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 400);
+            this.ClientSize = new System.Drawing.Size(808, 204);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
