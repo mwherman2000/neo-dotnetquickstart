@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using System.Security;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -90,16 +91,38 @@ namespace NPC.mwherman2000.NeoExpenses1.EncryptionTest
             }
         }
 
+        static string prevXML = "";
         private void buttonCreateAsmKeys_Click(object sender, System.EventArgs e)
         {
             // Stores a key pair in the key container.
             cspParameters.KeyContainerName = keyName;
+            // Reference: https://stackoverflow.com/questions/1307204/how-to-generate-unique-public-and-private-key-via-rsa
+            if (rsa != null)
+            {
+                rsa.PersistKeyInCsp = false;    // don't save the keys in the Windows local key store
+                rsa.Clear();                    // clear it if it's there
+                rsa.Dispose();                  // dispose this RSA provider
+            }
             rsa = new RSACryptoServiceProvider(cspParameters);
-            rsa.PersistKeyInCsp = true;
+            rsa.PersistKeyInCsp = false;        // don't save the keys in the Windows local key store
             if (rsa.PublicOnly == true)
                 label1.Text = "Key: " + cspParameters.KeyContainerName + " - Public Only";
             else
                 label1.Text = "Key: " + cspParameters.KeyContainerName + " - Full Key Pair";
+            string newXML = rsa.ToXmlString(true);
+            if (prevXML != "") // check if it's equal to the new keys
+            {
+                bool equal = (newXML == prevXML);
+                if (equal)
+                {
+                    MessageBox.Show("new keys == previous keys");
+                }
+                else
+                {
+                    MessageBox.Show("new keys != previous keys");
+                }
+            }
+            prevXML = newXML;
         }
 
         void buttonExportPublicKey_Click(object sender, System.EventArgs e)

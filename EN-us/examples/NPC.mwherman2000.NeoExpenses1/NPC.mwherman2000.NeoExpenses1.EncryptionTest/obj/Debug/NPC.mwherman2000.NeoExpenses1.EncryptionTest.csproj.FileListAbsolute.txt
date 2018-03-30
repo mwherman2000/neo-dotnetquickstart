@@ -1,4 +1,3 @@
-D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.EncryptionTest\obj\Debug\NPC.mwherman2000.NeoExpenses1.EncryptionTest.csprojResolveAssemblyReference.cache
 D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.EncryptionTest\obj\Debug\NPC.mwherman2000.NeoExpenses1.EncryptionTest.Form1.resources
 D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.EncryptionTest\obj\Debug\NPC.mwherman2000.NeoExpenses1.EncryptionTest.Properties.Resources.resources
 D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.NeoExpenses1\NPC.mwherman2000.NeoExpenses1.EncryptionTest\obj\Debug\NPC.mwherman2000.NeoExpenses1.EncryptionTest.csproj.GenerateResource.cache

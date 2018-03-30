@@ -1,0 +1,81 @@
+﻿using Neo.SmartContract.Framework;
+using NPC.Runtime;
+using System;
+using System.Numerics;
+
+/// <summary>
+/// NPC.mwherman2000.NeoExpenses1.Contract.NPCContributor Custom Methods
+///
+/// Processed:       2018-03-29 8:11:07 PM by npcc - NEO Persistable Classes (NPC) Platform 2.1 Compiler v2.1.0.34983
+/// NPC Project:     https://github.com/mwherman2000/neo-npcc/blob/master/README.md
+/// NPC Lead:        Michael Herman (Toronto) (mwherman@parallelspace.net)
+/// </summary>
+
+namespace NPC.mwherman2000.NeoExpenses1.Contract
+{
+    public partial class NPCContributor 
+    {
+        static readonly byte[] DOMAINNCD = "NCD".AsByteArray(); // NPC Contributor Directory (NCD)
+
+        public static NPCContributor CreateContributor(NeoVersionedAppUser AppVAU, object[] args)
+        {
+            NPCContributor results = NPCContributor.Null();
+
+            byte[] encodedContributorName = (byte[])args[0];
+            if (NeoTrace.ARGSRESULTS) NeoTrace.Trace("AddContributor.encodedContributorName", encodedContributorName);
+            byte[] encodedPassword = (byte[])args[1];
+            if (NeoTrace.ARGSRESULTS) NeoTrace.Trace("AddContributor.encodedPassword", encodedPassword);
+
+            NPCContributor uc = FindContributor(AppVAU, encodedContributorName);
+
+            if (NPCContributor.IsMissing(uc)) // add the unique new user
+            {
+                if (NeoTrace.INFO) NPCContributor.LogExt("AddContributor.missing", uc);
+                uc = NPCContributor.New(encodedContributorName, encodedPassword);
+                NPCContributor.PutElement(uc, AppVAU, DOMAINNCD, encodedContributorName);
+                if (NeoTrace.INFO) NPCContributor.LogExt("AddContributor.added", uc);
+            }
+            else
+            {
+                if (NeoTrace.INFO) NPCContributor.LogExt("AddContributor.exists", uc);
+            }
+
+            results = uc;
+            if (NeoTrace.ARGSRESULTS) NeoTrace.Trace("AddContributor.results", results);
+
+            return results;
+        }
+
+        private static NPCContributor FindContributor(NeoVersionedAppUser AppVAU, byte[] encodedContributorName)
+        {
+            if (NeoTrace.ARGSRESULTS) NeoTrace.Trace("FindContributor.encodedContributorName", encodedContributorName);
+
+            NPCContributor result = NPCContributor.GetElement(AppVAU, DOMAINNCD, encodedContributorName);
+
+            if (NeoTrace.ARGSRESULTS) NPCContributor.LogExt("FindContributor.result", result);
+
+            return result;
+        }
+
+        public static NPCContributor GetContributor(NeoVersionedAppUser AppVAU, object[] args)
+        {
+            NPCContributor results = NPCContributor.Null();
+
+            byte[] encodedContributorName = (byte[])args[0];
+            if (NeoTrace.ARGSRESULTS) NeoTrace.Trace("GetContributor.encodedContributorName", encodedContributorName);
+
+            NPCContributor uc = FindContributor(AppVAU, encodedContributorName);
+            if (NeoTrace.INFO) NPCContributor.LogExt("GetContributor.uc", uc);
+
+            results = uc;
+            if (NeoTrace.ARGSRESULTS) NeoTrace.Trace("GetContributor.results", results);
+
+            return results;
+        }
+
+        //private static NPCContributor[] GetContributors(NeoVersionedAppUser AppVAU, object[] args)
+        //{
+        //    throw new NotImplementedException();
+        //}
+    }
+}

@@ -1,0 +1,88 @@
+﻿using System;
+using System.Numerics;
+
+/// <summary>
+/// #NAMESPACE#.#CLASSNAME# Custom Methods
+///
+/// Processed:       #NOWDATETIME# by #PROGRAMNAME# v#PROGRAMVERSION#
+/// NPC Project:     https://github.com/mwherman2000/neo-npcc/blob/master/README.md
+/// NPC Lead:        Michael Herman (Toronto) (mwherman@parallelspace.net)
+/// </summary>
+
+namespace NPC.mwherman2000.NeoExpenses1.Model
+{
+    public partial class NPCNEP5Requisition : NPCLevel4CustomMethods
+    {
+        public enum WorkflowStates
+        {
+            New,
+            WaitingReview,
+            Approved,
+            Rejected,
+            Paid
+        }
+
+        static readonly byte[] DOMAINNEP5REQ = "NEP5REQ".AsByteArray(); // NPCNEP5Requisition Directory (NEP5REQ)
+
+        public static NPCRequisition CreateRequisition(NeoVersionedAppUser AppVAU, object[] args)
+        {
+            NPCRequisition results = NPCRequisition.Null();
+
+            byte[] encodedRequisitionName = (byte[])args[0];
+            if (NeoTrace.ARGSRESULTS) NeoTrace.Trace("AddRequisition.encodedRequisitionName", encodedRequisitionName);
+            byte[] encodedPassword = (byte[])args[1];
+            if (NeoTrace.ARGSRESULTS) NeoTrace.Trace("AddRequisition.encodedPassword", encodedPassword);
+
+            NPCRequisition uc = FindRequisition(AppVAU, encodedRequisitionName);
+
+            if (NPCRequisition.IsMissing(uc)) // add the unique new user
+            {
+                if (NeoTrace.INFO) NPCRequisition.LogExt("AddRequisition.missing", uc);
+                uc = NPCRequisition.New(encodedRequisitionName, encodedPassword);
+                NPCRequisition.PutElement(uc, AppVAU, DOMAINNEP5REQ, encodedRequisitionName);
+                if (NeoTrace.INFO) NPCRequisition.LogExt("AddRequisition.added", uc);
+            }
+            else
+            {
+                if (NeoTrace.INFO) NPCRequisition.LogExt("AddRequisition.exists", uc);
+            }
+
+            results = uc;
+            if (NeoTrace.ARGSRESULTS) NeoTrace.Trace("AddRequisition.results", results);
+
+            return results;
+        }
+
+        private static NPCRequisition FindRequisition(NeoVersionedAppUser AppVAU, byte[] encodedRequisitionName)
+        {
+            if (NeoTrace.ARGSRESULTS) NeoTrace.Trace("FindRequisition.encodedRequisitionName", encodedRequisitionName);
+
+            NPCRequisition result = NPCRequisition.GetElement(AppVAU, DOMAINNEP5REQ, encodedRequisitionName);
+
+            if (NeoTrace.ARGSRESULTS) NPCRequisition.LogExt("FindRequisition.result", result);
+
+            return result;
+        }
+
+        public static NPCRequisition GetRequisition(NeoVersionedAppUser AppVAU, object[] args)
+        {
+            NPCRequisition results = NPCRequisition.Null();
+
+            byte[] encodedRequisitionName = (byte[])args[0];
+            if (NeoTrace.ARGSRESULTS) NeoTrace.Trace("GetRequisition.encodedRequisitionName", encodedRequisitionName);
+
+            NPCRequisition uc = FindRequisition(AppVAU, encodedRequisitionName);
+            if (NeoTrace.INFO) NPCRequisition.LogExt("GetRequisition.uc", uc);
+
+            results = uc;
+            if (NeoTrace.ARGSRESULTS) NeoTrace.Trace("GetRequisition.results", results);
+
+            return results;
+        }
+
+        //private static NPCRequisition[] GetRequisitions(NeoVersionedAppUser AppVAU, object[] args)
+        //{
+        //    throw new NotImplementedException();
+        //}
+    }
+}

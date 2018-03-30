@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{765DAFB3-2EF6-4C18-AC9B-2F674FBC3958}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NPC.mwherman2000.NeoExpenses1.Contract</RootNamespace>
+    <AssemblyName>NPC.mwherman2000.NeoExpenses1.Contract</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Neo.SmartContract.Framework, Version=2.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neo.SmartContract.Framework.2.7.3\lib\net40\Neo.SmartContract.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NeoCounterL0Basic.cs" />
+    <Compile Include="NeoCounterL1Managed.cs" />
+    <Compile Include="NeoCounterL2Persistable.cs" />
+    <Compile Include="NeoCounterL3Deletable.cs" />
+    <Compile Include="NeoCounterL4CollectibleExt0.cs" />
+    <Compile Include="NeoCounterL4CollectibleExt2.cs" />
+    <Compile Include="NeoCounterL4CustomMethods.cs" />
+    <Compile Include="NeoEntityModel.cs" />
+    <Compile Include="NeoStorageKey.cs" />
+    <Compile Include="NeoTrace.cs" />
+    <Compile Include="NeoVersionedAppUser.cs" />
+    <Compile Include="NPCContributorL0Basic.cs" />
+    <Compile Include="NPCContributorL1Managed.cs" />
+    <Compile Include="NPCContributorL2Persistable.cs" />
+    <Compile Include="NPCContributorL3Deletable.cs" />
+    <Compile Include="NPCContributorL4CollectibleExt0.cs" />
+    <Compile Include="NPCContributorL4CollectibleExt2.cs" />
+    <Compile Include="NPCContributorL4CustomMethods.cs" />
+    <Compile Include="NPCEnvironmentL0Basic.cs" />
+    <Compile Include="NPCEnvironmentL0CustomMethods.cs" />
+    <Compile Include="NPCEnvironmentL1Managed.cs" />
+    <Compile Include="NPCNEP5BaseL0Basic.cs" />
+    <Compile Include="NPCNEP5BaseL1Managed.cs" />
+    <Compile Include="NPCNEP5RequisitionContract.cs" />
+    <Compile Include="NPCNEP5LedgerEntryL0Basic.cs" />
+    <Compile Include="NPCNEP5LedgerEntryL1Managed.cs" />
+    <Compile Include="NPCNEP5LedgerEntryL2CustomMethods.cs" />
+    <Compile Include="NPCNEP5LedgerEntryL2Persistable.cs" />
+    <Compile Include="NPCNEP5RequisitionL0Basic.cs" />
+    <Compile Include="NPCNEP5RequisitionL1Managed.cs" />
+    <Compile Include="NPCNEP5RequisitionL2Persistable.cs" />
+    <Compile Include="NPCNEP5RequisitionL3Deletable.cs" />
+    <Compile Include="NPCNEP5RequisitionL4CollectibleExt0.cs" />
+    <Compile Include="NPCNEP5RequisitionL4CollectibleExt2.cs" />
+    <Compile Include="NPCNEP5RequisitionL4CustomMethods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REL_Contrib_ReqL0Basic.cs" />
+    <Compile Include="REL_Contrib_ReqL1Managed.cs" />
+    <Compile Include="REL_Contrib_ReqL2Persistable.cs" />
+    <Compile Include="REL_Contrib_ReqL3Deletable.cs" />
+    <Compile Include="REL_Contrib_ReqL4CollectibleExt0.cs" />
+    <Compile Include="REL_Contrib_ReqL4CollectibleExt2.cs" />
+    <Compile Include="UserCredentialsL0Basic.cs" />
+    <Compile Include="UserCredentialsL1Managed.cs" />
+    <Compile Include="UserCredentialsL2Persistable.cs" />
+    <Compile Include="UserCredentialsL3Deletable.cs" />
+    <Compile Include="UserCredentialsL4CollectibleExt0.cs" />
+    <Compile Include="UserCredentialsL4CollectibleExt2.cs" />
+    <Compile Include="UserCredentialsL4CustomMethods.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="build.tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Neo.ConvertTask.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="Build.tasks" />
+  <PropertyGroup>
+    <PostBuildEvent>set PATH="D:\repos\neo-debugger-tools\NEO-Compiler\bin\Debug";%25PATH%25
+neon.exe $(TargetPath)</PostBuildEvent>
+  </PropertyGroup>
+</Project>
