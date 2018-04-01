@@ -13,4 +13,4 @@ To learn more about contributing to the `neo-csharpcoe`, click [here](https://gi
 The purpose of this document is to enable .NET developers who are brand new to NEO Blockchain technology to create a useful NEO development environment and get it up and running in as little time as possible.
 
 * [English](./EN-us/README.md)
-* [Turkish](./TR-tr/README.md)
+

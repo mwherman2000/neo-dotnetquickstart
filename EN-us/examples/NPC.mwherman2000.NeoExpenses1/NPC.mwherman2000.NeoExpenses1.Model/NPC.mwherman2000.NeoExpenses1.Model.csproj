@@ -65,5 +65,8 @@
     <None Include="NPCEnvironmentL0CustomMethods.csi" />
     <None Include="NPCNEP5LedgerEntryL2CustomMethods.csi" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="notes.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
