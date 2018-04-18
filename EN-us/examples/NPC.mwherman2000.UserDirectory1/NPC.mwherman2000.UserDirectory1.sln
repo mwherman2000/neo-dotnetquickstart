@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPC.mwherman2000.UserDirectory1.Model", "NPC.mwherman2000.UserDirectory1.Model\NPC.mwherman2000.UserDirectory1.Model.csproj", "{870E4421-143C-451F-933F-0B80DE80C3B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPC.mwherman2000.UserDirectory1.Contract", "NPC.mwherman2000.UserDirectory1.Contract\NPC.mwherman2000.UserDirectory1.Contract.csproj", "{F4ABAFAC-1941-4164-84D6-A63F53DAE92D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{870E4421-143C-451F-933F-0B80DE80C3B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{870E4421-143C-451F-933F-0B80DE80C3B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{870E4421-143C-451F-933F-0B80DE80C3B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{870E4421-143C-451F-933F-0B80DE80C3B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4ABAFAC-1941-4164-84D6-A63F53DAE92D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4ABAFAC-1941-4164-84D6-A63F53DAE92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4ABAFAC-1941-4164-84D6-A63F53DAE92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4ABAFAC-1941-4164-84D6-A63F53DAE92D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95837523-DAE3-4D44-82FF-A881158FB883}
+	EndGlobalSection
+EndGlobal

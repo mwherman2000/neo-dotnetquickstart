@@ -1,0 +1,8 @@
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.UserDirectory1\NPC.mwherman2000.UserDirectory1.Contract\obj\Debug\NPC.mwherman2000.UserDirectory1.Contract.csproj.CoreCompileInputs.cache
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.UserDirectory1\NPC.mwherman2000.UserDirectory1.Contract\bin\Debug\NPC.mwherman2000.UserDirectory1.Contract.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.UserDirectory1\NPC.mwherman2000.UserDirectory1.Contract\bin\Debug\NPC.mwherman2000.UserDirectory1.Contract.pdb
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.UserDirectory1\NPC.mwherman2000.UserDirectory1.Contract\bin\Debug\Neo.SmartContract.Framework.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.UserDirectory1\NPC.mwherman2000.UserDirectory1.Contract\obj\Debug\NPC.mwherman2000.UserDirectory1.Contract.csproj.CopyComplete
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.UserDirectory1\NPC.mwherman2000.UserDirectory1.Contract\obj\Debug\NPC.mwherman2000.UserDirectory1.Contract.dll
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.UserDirectory1\NPC.mwherman2000.UserDirectory1.Contract\obj\Debug\NPC.mwherman2000.UserDirectory1.Contract.pdb
+D:\repos\neo-dotnetquickstart\EN-us\examples\NPC.mwherman2000.UserDirectory1\NPC.mwherman2000.UserDirectory1.Contract\obj\Debug\NPC.mwherman2000.UserDirectory1.Contract.csprojResolveAssemblyReference.cache
