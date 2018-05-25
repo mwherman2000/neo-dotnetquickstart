@@ -1,4 +1,4 @@
-REM cd opt/neo-python
+REM cd neo/bin
 REM python3 prompt.py -p
 REM block 0
 docker exec -it neo-privatenet /bin/bash

@@ -1,8 +1,11 @@
 docker container list
+docker stop neo-privnet-with-gas
 docker stop neo-privatenet
 docker container list
+docker rm neo-privnet-with-gas
 docker rm neo-privatenet
 docker image list
-docker rmi cityofzion/neo-privatenet
+docker rmi -f metachris/neo-privnet-with-gas
+docker rmi -f cityofzion/neo-privatenet
 docker image list
 pause
