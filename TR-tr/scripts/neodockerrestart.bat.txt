@@ -1,6 +1,6 @@
 docker container list
-docker stop neo-privnet-with-gas
+docker stop neo-privatenet
 docker container list
-docker start neo-privnet-with-gas
+docker start neo-privatenet
 docker container list
 pause

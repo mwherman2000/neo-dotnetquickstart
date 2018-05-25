@@ -37,11 +37,11 @@ The purpose of this section is to document how to reset your NEO privatenet envi
 2. Reset the the NEO Docker container by running the following script: 
     ```
     docker container list
-    docker stop neo-privnet-with-gas
+    docker stop neo-privatenet
     docker container list
-    docker rm neo-privnet-with-gas
+    docker rm neo-privatenet
     docker container list
-    docker run -d --name neo-privnet-with-gas -p 20333-20336:20333-20336/tcp -p 30333-30336:30333-30336/tcp cityofzion/neo-privnet-with-gas
+    docker run -d --name neo-privatenet -p 20333-20336:20333-20336/tcp -p 30333-30336:30333-30336/tcp cityofzion/neo-privatenet
     docker container list
     pause
     ```

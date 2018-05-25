@@ -38,8 +38,8 @@ The purpose of this activity is to download, install and test the NEO private ne
 
 2. To download the NEO Docker container and run it, run the following script: 
     ```
-    docker pull cityofzion/neo-privnet-with-gas
-    docker run -d --name neo-privnet-with-gas -p 20333-20336:20333-20336/tcp -p 30333-30336:30333-30336/tcp cityofzion/neo-privnet-with-gas
+    docker pull cityofzion/neo-privatenet
+    docker run -d --name neo-privatenet -p 20333-20336:20333-20336/tcp -p 30333-30336:30333-30336/tcp cityofzion/neo-privatenet
     pause
     ```
     Script: NEO Docker Download/Install/Run  ([./scripts/neodockerinstall.bat.txt](./scripts/neodockerinstall.bat.txt))
@@ -57,7 +57,7 @@ The purpose of this activity is to download, install and test the NEO private ne
     REM cd opt/neo-python
     REM python3 prompt.py -p
     REM block 0
-    docker exec -it neo-privnet-with-gas /bin/bash
+    docker exec -it neo-privatenet /bin/bash
     pause
     ```
     Script: NEO Docker Python CLI/Shell ([./scripts/neodockerpshell.bat.txt](./scripts/neodockerpshell.bat.txt))
@@ -108,6 +108,6 @@ To switch over from an existing NEO network to this privatenet, make sure you:
 ## References
 
 * [DOCKER] docker.com, [Install Docker for Windows](https://docs.docker.com/docker-for-windows/install/) from [https://docs.docker.com/docker-for-windows/install/] (https://docs.docker.com/docker-for-windows/install/)
-* [NEODOCKER1] metachris, [cityofzion/neo-privnet-with-gas](https://hub.docker.com/r/cityofzion/neo-privnet-with-gas/) from [https://hub.docker.com/r/cityofzion/neo-privnet-with-gas/]https://hub.docker.com/r/cityofzion/neo-privnet-with-gas/()
+* [NEODOCKER1] metachris, [cityofzion/neo-privatenet](https://hub.docker.com/r/cityofzion/neo-privatenet/) from [https://hub.docker.com/r/cityofzion/neo-privatenet/]https://hub.docker.com/r/cityofzion/neo-privatenet/()
 * [NEODOCKER2] CityOfZion project, [CityOfZion/neo-privatenet-docker](https://github.com/CityOfZion/neo-privatenet-docker) from [https://github.com/CityOfZion/neo-privatenet-docker](https://github.com/CityOfZion/neo-privatenet-docker)
 * [NEODOCKER3] Chris Haer, [How to run a private network of the NEO blockchain](https://medium.com/proof-of-working/how-to-run-a-private-network-of-the-neo-blockchain-d83004557359) from [https://medium.com/proof-of-working/how-to-run-a-private-network-of-the-neo-blockchain-d83004557359](https://medium.com/proof-of-working/how-to-run-a-private-network-of-the-neo-blockchain-d83004557359)

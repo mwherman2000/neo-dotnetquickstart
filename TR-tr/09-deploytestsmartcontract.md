@@ -27,11 +27,11 @@ The purpose of this activity is to use deploy and test the HelloWorld smart cont
 1. Start the NEO privatenet Docker container by opening PowerShell and running the following commands: 
     ```
     docker container list
-    docker stop neo-privnet-with-gas
+    docker stop neo-privatenet
     docker container list
-    docker rm neo-privnet-with-gas
+    docker rm neo-privatenet
     docker container list
-    docker run -d --name neo-privnet-with-gas -p 20333-20336:20333-20336/tcp -p 30333-30336:30333-30336/tcp cityofzion/neo-privnet-with-gas
+    docker run -d --name neo-privatenet -p 20333-20336:20333-20336/tcp -p 30333-30336:30333-30336/tcp cityofzion/neo-privatenet
     docker container list
     pause
     ```
@@ -50,7 +50,7 @@ The purpose of this activity is to use deploy and test the HelloWorld smart cont
     REM cd opt/neo-python
     REM python3 prompt.py -p
     REM block 0
-    docker exec -it neo-privnet-with-gas /bin/bash
+    docker exec -it neo-privatenet /bin/bash
     pause
     ```
     Script: NEO Docker Python CLI/Shell ([./scripts/neodockerpshell.bat.txt](./scripts/neodockerpshell.bat.txt))
@@ -154,7 +154,7 @@ The purpose of this activity is to use deploy and test the HelloWorld smart cont
     Figure 9.13. `neo-gui`: `Import` > `Import from WIF...`
 
 15. The following `Import Private Key` dialog box will be displayed. 
-Enter the WIF key provided in the NEO Docker container documentation [[NEODOCKER1](https://hub.docker.com/r/cityofzion/neo-privnet-with-gas/#Wallet)] and click `OK`. 
+Enter the WIF key provided in the NEO Docker container documentation [[NEODOCKER1](https://hub.docker.com/r/cityofzion/neo-privatenet/#Wallet)] and click `OK`. 
     ```
     WIF key: KxDgvEKzgSBPPfuVfw67oPQBSjidEiqTHURKSDL1R7yGaGYAeYnr
     ```
@@ -425,7 +425,7 @@ The tasks for this activity are complete. Proceed to [Activity 10 - Celebrate](.
 ## References
 
 * [NEOTUTORIAL] NEO Project, [NEO smart contract tutorial](http://docs.neo.org/en-us/sc/tutorial.html) from [http://docs.neo.org/en-us/sc/tutorial.html](http://docs.neo.org/en-us/sc/tutorial.html)
-* [NEODOCKER1] metachris, [cityofzion/neo-privnet-with-gas](https://hub.docker.com/r/cityofzion/neo-privnet-with-gas/) from [https://hub.docker.com/r/cityofzion/neo-privnet-with-gas/]https://hub.docker.com/r/cityofzion/neo-privnet-with-gas/()
+* [NEODOCKER1] metachris, [cityofzion/neo-privatenet](https://hub.docker.com/r/cityofzion/neo-privatenet/) from [https://hub.docker.com/r/cityofzion/neo-privatenet/]https://hub.docker.com/r/cityofzion/neo-privatenet/()
 * [NEOPARMTYPES] Neo Project, [Smart Contract Parameters and Return Values](http://docs.neo.org/en-us/sc/tutorial/Parameter.html) from [http://docs.neo.org/en-us/sc/tutorial/Parameter.html](http://docs.neo.org/en-us/sc/tutorial/Parameter.html)
 
 ## Other Good Resources
