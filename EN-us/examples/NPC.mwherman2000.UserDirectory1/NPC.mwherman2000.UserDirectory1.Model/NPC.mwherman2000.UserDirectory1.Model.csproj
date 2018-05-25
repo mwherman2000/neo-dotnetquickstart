@@ -50,4 +50,7 @@
     <None Include="NeoCounterL4CustomMethods.csi" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>D:\repos\neo-npcc2\neo-npcc\npcc\bin\Debug\npcc.exe .</PostBuildEvent>
+  </PropertyGroup>
 </Project>

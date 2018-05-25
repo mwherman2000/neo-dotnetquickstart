@@ -31,7 +31,7 @@ The purpose of this activity is to use deploy and test the HelloWorld smart cont
     docker container list
     docker rm neo-privnet-with-gas
     docker container list
-    docker run -d --name neo-privnet-with-gas -p 20333-20336:20333-20336/tcp -p 30333-30336:30333-30336/tcp metachris/neo-privnet-with-gas
+    docker run -d --name neo-privnet-with-gas -p 20333-20336:20333-20336/tcp -p 30333-30336:30333-30336/tcp cityofzion/neo-privnet-with-gas
     docker container list
     pause
     ```
@@ -154,7 +154,7 @@ The purpose of this activity is to use deploy and test the HelloWorld smart cont
     Figure 9.13. `neo-gui`: `Import` > `Import from WIF...`
 
 15. The following `Import Private Key` dialog box will be displayed. 
-Enter the WIF key provided in the NEO Docker container documentation [[NEODOCKER1](https://hub.docker.com/r/metachris/neo-privnet-with-gas/#Wallet)] and click `OK`. 
+Enter the WIF key provided in the NEO Docker container documentation [[NEODOCKER1](https://hub.docker.com/r/cityofzion/neo-privnet-with-gas/#Wallet)] and click `OK`. 
     ```
     WIF key: KxDgvEKzgSBPPfuVfw67oPQBSjidEiqTHURKSDL1R7yGaGYAeYnr
     ```
@@ -425,7 +425,7 @@ The tasks for this activity are complete. Proceed to [Activity 10 - Celebrate](.
 ## References
 
 * [NEOTUTORIAL] NEO Project, [NEO smart contract tutorial](http://docs.neo.org/en-us/sc/tutorial.html) from [http://docs.neo.org/en-us/sc/tutorial.html](http://docs.neo.org/en-us/sc/tutorial.html)
-* [NEODOCKER1] metachris, [metachris/neo-privnet-with-gas](https://hub.docker.com/r/metachris/neo-privnet-with-gas/) from [https://hub.docker.com/r/metachris/neo-privnet-with-gas/]https://hub.docker.com/r/metachris/neo-privnet-with-gas/()
+* [NEODOCKER1] metachris, [cityofzion/neo-privnet-with-gas](https://hub.docker.com/r/cityofzion/neo-privnet-with-gas/) from [https://hub.docker.com/r/cityofzion/neo-privnet-with-gas/]https://hub.docker.com/r/cityofzion/neo-privnet-with-gas/()
 * [NEOPARMTYPES] Neo Project, [Smart Contract Parameters and Return Values](http://docs.neo.org/en-us/sc/tutorial/Parameter.html) from [http://docs.neo.org/en-us/sc/tutorial/Parameter.html](http://docs.neo.org/en-us/sc/tutorial/Parameter.html)
 
 ## Other Good Resources
