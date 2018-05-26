@@ -54,7 +54,7 @@ The purpose of this activity is to download, install and test the NEO private ne
 
 3. To test the NEO Docker container, run following script:
     ```
-    REM cd opt/neo-python
+    REM cd neo/bin
     REM python3 prompt.py -p
     REM block 0
     docker exec -it neo-privatenet /bin/bash
@@ -64,7 +64,7 @@ The purpose of this activity is to download, install and test the NEO private ne
 
 4. The above script will open a bash console for the NEO container. Execute the following commands in the Bash console to start the NEO Python CLI:
     ```
-    cd opt/neo-python
+    cd neo/bin
     python3 prompt.py -p
     ```
 
@@ -108,6 +108,6 @@ To switch over from an existing NEO network to this privatenet, make sure you:
 ## References
 
 * [DOCKER] docker.com, [Install Docker for Windows](https://docs.docker.com/docker-for-windows/install/) from [https://docs.docker.com/docker-for-windows/install/] (https://docs.docker.com/docker-for-windows/install/)
-* [NEODOCKER1] metachris, [cityofzion/neo-privatenet](https://hub.docker.com/r/cityofzion/neo-privatenet/) from [https://hub.docker.com/r/cityofzion/neo-privatenet/]https://hub.docker.com/r/cityofzion/neo-privatenet/()
+* [NEODOCKER1] metachris, [cityofzion/neo-privatenet](https://hub.docker.com/r/cityofzion/neo-privatenet/) from [https://hub.docker.com/r/cityofzion/neo-privatenet/](https://hub.docker.com/r/cityofzion/neo-privatenet/)
 * [NEODOCKER2] CityOfZion project, [CityOfZion/neo-privatenet-docker](https://github.com/CityOfZion/neo-privatenet-docker) from [https://github.com/CityOfZion/neo-privatenet-docker](https://github.com/CityOfZion/neo-privatenet-docker)
 * [NEODOCKER3] Chris Haer, [How to run a private network of the NEO blockchain](https://medium.com/proof-of-working/how-to-run-a-private-network-of-the-neo-blockchain-d83004557359) from [https://medium.com/proof-of-working/how-to-run-a-private-network-of-the-neo-blockchain-d83004557359](https://medium.com/proof-of-working/how-to-run-a-private-network-of-the-neo-blockchain-d83004557359)
